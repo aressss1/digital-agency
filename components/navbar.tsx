@@ -8,7 +8,7 @@ const Navbar = () => {
                 src="logo.svg"
                 alt="logo"
             />
-            <div className="flex gap-4 items-center " >
+            <div className="flex gap-4 items-center font-['ClashDisplay-Regular'] " >
                 <div className="text-white text-base font-normal font-['Clash Display']">About us</div>
                 <div className="text-white text-base font-normal font-['Clash Display']">Store</div>
                 <div className="text-white text-base font-normal font-['Clash Display']">Games</div>

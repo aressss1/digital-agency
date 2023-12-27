@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('clash-display.css');
  
 @layer base {
   :root {
