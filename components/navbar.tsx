@@ -9,10 +9,10 @@ const Navbar = () => {
                 alt="logo"
             />
             <div className="flex gap-4 items-center fontcs " >
-                <div className="text-white text-base font-normal font-['Clash Display']">About us</div>
-                <div className="text-white text-base font-normal font-['Clash Display']">Store</div>
-                <div className="text-white text-base font-normal font-['Clash Display']">Games</div>
-                <Button className="text-base font-semibold font-['Clash Display']" >
+                <div className="text-white text-base font-normal ">About us</div>
+                <div className="text-white text-base font-normal ">Store</div>
+                <div className="text-white text-base font-normal ">Games</div>
+                <Button className="text-base font-semibold " >
                     Connect Wallet
                 </Button>
             </div>
