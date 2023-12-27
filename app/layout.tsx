@@ -3,7 +3,7 @@ import './globals.css'
 import localFont from 'next/font/local'
 
 const clashDisplay = localFont({
-  src: "/fonts/ClashDisplay-Regular.ttf",
+  src: "fonts/ClashDisplay-Regular.ttf",
   variable: '--font-clashdisplay'
 })
 
