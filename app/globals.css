@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('clash-display.css');
+/* @import url('clash-display.css'); */
  
 @layer base {
   :root {
@@ -73,5 +73,11 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .fontcs {
+    font-family: var(--font-roboto-mono);
   }
 }
