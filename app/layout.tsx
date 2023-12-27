@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import localFont from 'next/font/local'
+// import localFont from 'next/font/local'
 
-const clashDisplay = localFont({
-  src: "fonts/ClashDisplay-Regular.woff2",
-  variable: '--font-clashdisplay'
-})
+// const clashDisplay = localFont({
+//   src: "fonts/ClashDisplay-Regular.woff2",
+//   variable: '--font-clashdisplay'
+// })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${clashDisplay.variable} font-sans`}>
+      <body className={`font-sans`}>
         {children}
       </body>
     </html>
