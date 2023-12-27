@@ -78,6 +78,6 @@
 
 @layer utilities {
   .fontcs {
-    font-family: var(--font-roboto-mono);
+    font-family: var(--font-clashdisplay);
   }
 }
