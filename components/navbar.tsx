@@ -36,17 +36,17 @@ const Navbar = () => {
                     </div>
                 ))}
             </div>
-            <Button className="bg-orange rounded-3xl text-stone-50 text-base font-medium " >
-                <p className="mr-1" >
+            <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
+                <p className="mr-9" >
                     Contact Us
                 </p>
                 <Separator className="pt-[2px]" />
             </Button>
 
             {/* Responsive Navbar / Hamburger Menu */}
-            <Sheet>
+            <Sheet className="md:hidden" >
                 <SheetTrigger asChild>
-                    <Button variant="outline" className="md:hidden" >
+                    <Button variant="outline"  >
                         <Menu />
                     </Button>
                 </SheetTrigger>
