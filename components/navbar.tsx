@@ -44,20 +44,37 @@ const Navbar = () => {
             </Button>
 
             {/* Responsive Navbar / Hamburger Menu */}
-            <Sheet >
-                <SheetTrigger asChild className="md:hidden" >
-                    <Button variant="outline"  >
+            {/* <Sheet >
+                <SheetTrigger asChild>
+                    <Button className="md:hidden  h-10 items-center justify-center rounded-none bg-special hover:bg-lime-600 text-black  " >
                         <Menu />
                     </Button>
                 </SheetTrigger>
-                <SheetDescription className="md:hidden flex flex-col gap-5  justify-center items-center  " >
-                        {navLinks.map((nav) => (
-                            <div key={nav.label} className="text-gray-900 text-base font-normal" >
-                                {nav.label}
-                            </div>
-                        ))}
-                </SheetDescription>
-            </Sheet>
+                <SheetContent >
+                    <div className='flex flex-col gap-12 mt-9' >
+                        <ul className="text-white text-opacity-70  text-base font-normal flex flex-col gap-6 roboto " >
+                            <li>
+                                why FinanceX
+                            </li>
+                            <li>
+                                Features
+                            </li>
+                            <li>
+                                Updates
+                            </li>
+                            <li>
+                                Blog
+                            </li>
+                        </ul>
+                        <Button className="flex w-[111px] flex-row gap-2 items-center justify-center rounded-none bg-special hover:bg-lime-600 text-black " >
+                            SignUp
+                            <MoveRight />
+                        </Button>
+                    </div>
+
+                </SheetContent>
+            </Sheet> */}
+
         </div>
     );
 }
