@@ -35,7 +35,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex gap-4 pt-12 flex-wrap " >
-                <div className="bg-orange rounded-[2.5rem] w-[30rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
+                <div className="bg-orange rounded-[2.5rem] w-[29rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
                     {heroContent.map((content) => (
                         <div key={content.label} className="flex gap-4 w-[11rem]">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
@@ -58,28 +58,28 @@ const HeroSection = () => {
 
                 <div className="flex flex-col gap-4" >
                     <div className="bg-orange flex justify-around items-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem] p-3 " >
-                        <Image 
+                        <Image
                             src="Loading.png"
                             alt="loading"
                         />
-                        <Image 
+                        <Image
                             src="emoji.png"
                             alt="emoji"
                         />
                     </div>
                     <Button className="bg-amber flex items-center justify-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem]  " >
-                       Know More
-                       <ArrowRight className="h-5"  />
+                        Know More
+                        <ArrowRight className="h-5" />
                     </Button>
                 </div>
 
-                <div className="bg-pink  rounded-[2.5rem] w-[11rem] h-[9rem] overflow-hidden pl-3 pt-3" >
-                        <Image 
-                            src="hero-2.png"
-                            alt="hero-2"
-                            className="rounded-tl-[2.5rem]"
-                        />
-                    </div>
+                <div className="bg-pink  rounded-[2.5rem] w-[11rem] h-[9rem] overflow-hidden pl-3 pt-[.875rem]" >
+                    <Image
+                        src="hero-2.png"
+                        alt="hero-2"
+                        className="rounded-tl-[2.5rem]"
+                    />
+                </div>
             </div>
         </div>
     );
