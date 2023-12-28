@@ -73,7 +73,7 @@ const HeroSection = () => {
                     </Button>
                 </div>
 
-                <div className="bg-pink  rounded-[2.5rem] w-[13rem] h-[4rem] overflow-hidden pl-4 pt-4" >
+                <div className="bg-pink  rounded-[2.5rem] w-[13rem] h-[9rem] overflow-hidden pl-4 pt-4" >
                         <Image 
                             src="hero-2.png"
                             alt="hero-2"
