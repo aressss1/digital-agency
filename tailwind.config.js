@@ -1,4 +1,3 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -21,6 +20,7 @@ module.exports = {
     extend: {
       colors: {
         orange: "#F86D31",
+        emerald: "#159871",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

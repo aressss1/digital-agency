@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const HeroSection = () => {
     const heroContent = [
         {
@@ -42,6 +44,14 @@ const HeroSection = () => {
                             </div>
                         </div>
                     ))}
+                </div>
+
+                <div className="bg-emerald rounded-[2.5rem] w-[18rem] h-[10rem] " >
+                    <Image 
+                        src="hero-1.png"
+                        alt="hero-1"
+                        className="object-contain pl-4"
+                    />
                 </div>
             </div>
         </div>
