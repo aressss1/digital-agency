@@ -35,7 +35,7 @@ const HeroSection = () => {
             </div>
 
             <div className="flex gap-2 pt-12 " >
-                <div className="bg-orange rounded-[2.5rem] w-[32rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
+                <div className="bg-orange rounded-[2.5rem] w-[30rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
                     {heroContent.map((content) => (
                         <div key={content.label} className="flex gap-4 w-[11rem]">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
@@ -52,12 +52,12 @@ const HeroSection = () => {
                     <Image
                         src="hero-1.png"
                         alt="hero-1"
-                        className="object-contain pl-8"
+                        className="object-contain pl-9"
                     />
                 </div>
 
                 <div className="flex flex-col gap-4" >
-                    <div className="bg-orange flex gap-4 rounded-[2.5rem] w-[14rem] h-[4rem] p-3 " >
+                    <div className="bg-orange flex justify-around items-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem] p-3 " >
                         <Image 
                             src="Loading.png"
                             alt="loading"
@@ -67,11 +67,18 @@ const HeroSection = () => {
                             alt="emoji"
                         />
                     </div>
-                    <Button className="bg-orange flex items-center justify-center gap-4 rounded-[2.5rem] w-[14rem] h-[4rem]  " >
+                    <Button className="bg-amber flex items-center justify-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem]  " >
                        Know More
-                       <ArrowRight />
+                       <ArrowRight className="h-5"  />
                     </Button>
                 </div>
+
+                <div className="bg-pink  rounded-[2.5rem] w-[13rem] h-[4rem] overflow-hidden pl-4 pt-4" >
+                        <Image 
+                            src="hero-2.png"
+                            alt="hero-2"
+                        />
+                    </div>
             </div>
         </div>
     );
