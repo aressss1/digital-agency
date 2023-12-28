@@ -48,7 +48,7 @@ const HeroSection = () => {
 
                 <div className="bg-emerald rounded-[2.5rem] w-[18rem] h-[10rem] " >
                     <Image 
-                        src="hero-1.png"
+                        src="hero-11.jpg"
                         alt="hero-1"
                         className="object-contain pl-4"
                     />
