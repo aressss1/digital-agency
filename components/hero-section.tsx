@@ -1,4 +1,24 @@
 const HeroSection = () => {
+    const heroContent = [
+        {
+            number: "170+",
+            label: "Happy Client"
+        },
+        {
+            number: "20+",
+            label: "Creative People"
+        },
+        {
+            number: "200+",
+            label: "Project Done"
+        },
+        {
+            number: "15+",
+            label: "Year Experience"
+        },
+    ]
+
+
     return ( 
         <div className="flex flex-col lg:px-20 md:px-1 px-4 py-5 bg-stone-50 " >
             <div className="flex flex-col gap-5" >
@@ -10,9 +30,18 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="flex gap-2" >
-                <div className="bg-orange rounded-3xl w-96 h-52   " >
-
+            <div className="flex gap-2 pt-12 " >
+                <div className="bg-orange rounded-[2.5rem] w-[32rem] h-[10rem] flex justify-center items-center gap-5 flex-wrap  " >
+                    {heroContent.map((content) => (
+                        <div key={content.label} className="flex gap-2 ">
+                            <div className=" h-11 text-stone-50 text-4xl font-bold">
+                                {content.number}
+                            </div>
+                            <div className=" text-stone-50 text-lg font-normal leading-snug">
+                                Happy<br/>Clients
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
