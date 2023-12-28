@@ -21,6 +21,7 @@ module.exports = {
       colors: {
         orange: "#F86D31",
         emerald: "#159871",
+        amber: "#F2B62C",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
