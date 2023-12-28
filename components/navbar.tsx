@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetDescription, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 
 const Navbar = () => {
@@ -50,14 +50,12 @@ const Navbar = () => {
                         <Menu />
                     </Button>
                 </SheetTrigger>
-                <SheetDescription>
-                    <div className="flex flex-col gap-5  justify-center items-center  " >
+                <SheetDescription className="md:hidden flex flex-col gap-5  justify-center items-center  " >
                         {navLinks.map((nav) => (
                             <div key={nav.label} className="text-gray-900 text-base font-normal" >
                                 {nav.label}
                             </div>
                         ))}
-                    </div>
                 </SheetDescription>
             </Sheet>
         </div>
