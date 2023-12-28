@@ -37,7 +37,7 @@ const Navbar = () => {
                 ))}
             </div>
             <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
-                <p className="mr-9" >
+                <p className="lg:mr-9 mr-5" >
                     Contact Us
                 </p>
                 <Separator className="pt-[2px]" />
