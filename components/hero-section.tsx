@@ -46,11 +46,11 @@ const HeroSection = () => {
                     ))}
                 </div>
 
-                <div className="bg-emerald rounded-[2.5rem] w-[18rem] h-[10rem] " >
+                <div className="bg-emerald rounded-[2.5rem] w-[18rem] h-[10rem] overflow-hidden " >
                     <Image 
-                        src="hero-11.jpg"
+                        src="hero-1.png"
                         alt="hero-1"
-                        className="object-contain pl-4"
+                        className="object-contain pl-8"
                     />
                 </div>
             </div>
