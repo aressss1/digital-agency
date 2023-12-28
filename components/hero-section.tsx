@@ -34,7 +34,7 @@ const HeroSection = () => {
                 </div>
             </div>
 
-            <div className="flex gap-2 pt-12 " >
+            <div className="flex gap-4 pt-12 flex-wrap " >
                 <div className="bg-orange rounded-[2.5rem] w-[30rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
                     {heroContent.map((content) => (
                         <div key={content.label} className="flex gap-4 w-[11rem]">
@@ -73,10 +73,11 @@ const HeroSection = () => {
                     </Button>
                 </div>
 
-                <div className="bg-pink  rounded-[2.5rem] w-[13rem] h-[9rem] overflow-hidden pl-4 pt-4" >
+                <div className="bg-pink  rounded-[2.5rem] w-[11rem] h-[9rem] overflow-hidden pl-3 pt-3" >
                         <Image 
                             src="hero-2.png"
                             alt="hero-2"
+                            className="rounded-tl-[2.5rem]"
                         />
                     </div>
             </div>
