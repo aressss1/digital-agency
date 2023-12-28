@@ -2,7 +2,7 @@ const HeroSection = () => {
     const heroContent = [
         {
             number: "170+",
-            label: "Happy Client"
+            label: "Happy  Client"
         },
         {
             number: "20+",
@@ -38,7 +38,7 @@ const HeroSection = () => {
                                 {content.number}
                             </div>
                             <div className=" text-stone-50 text-lg font-normal leading-snug">
-                                Happy<br/>Clients
+                                {content.label}
                             </div>
                         </div>
                     ))}
