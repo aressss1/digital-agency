@@ -23,7 +23,7 @@ const Navbar = () => {
     return ( 
         <div className="flex lg:px-20 md:px-14 px-4 py-6 justify-between" >
             <Image 
-                src="logp.svg"
+                src="logo.svg"
                 alt="logo"
             />
             <div className="flex gap-5 items-center" >
