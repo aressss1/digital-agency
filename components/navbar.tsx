@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <div className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between" >
             <Image
-                src="logo.svg"
+                src="Logo.svg"
                 alt="logo"
             />
             <div className="hidden md:flex lg:gap-5 md:gap-3 items-center  " >
