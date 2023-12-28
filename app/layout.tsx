@@ -1,11 +1,19 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import { Montserrat as FontSans } from "next/font/google"
+// import { Montserrat as FontSans } from "next/font/google"
+import { Inter as FontSans } from "next/font/google"
+ 
+
+// const fontSans = FontSans({
+//   subsets: ["latin"],
+//   variable: "--font-sans",
+// })
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 })
+ 
 
 export const metadata: Metadata = {
   title: 'Logoipsum',
