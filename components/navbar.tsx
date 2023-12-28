@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { Separator } from "./ui/separator";
+import { Sheet, SheetClose, SheetContent, SheetDescription, SheetTrigger } from "./ui/sheet";
+import { Menu } from "lucide-react";
 
 const Navbar = () => {
     const navLinks = [
@@ -20,24 +23,45 @@ const Navbar = () => {
         },
     ]
 
-    return ( 
+    return (
         <div className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between" >
-            <Image 
+            <Image
                 src="logo.svg"
                 alt="logo"
             />
-            <div className="flex gap-5 items-center" >
+            <div className="hidden md:flex lg:gap-5 md:gap-3 items-center  " >
                 {navLinks.map((nav) => (
-                    <div key={nav.label} className="text-gray-900 text-lg font-medium" >
+                    <div key={nav.label} className="text-gray-900 text-base font-normal" >
                         {nav.label}
                     </div>
                 ))}
             </div>
-            <Button className="bg-orange rounded-3xl text-stone-50 text-lg font-medium underline " >
-                Contact Us
+            <Button className="bg-orange rounded-3xl text-stone-50 text-base font-medium " >
+                <p className="mr-1" >
+                    Contact Us
+                </p>
+                <Separator className="pt-[2px]" />
             </Button>
+
+            {/* Responsive Navbar / Hamburger Menu */}
+            <Sheet>
+                <SheetTrigger asChild>
+                    <Button variant="outline" className="md:hidden" >
+                        <Menu />
+                    </Button>
+                </SheetTrigger>
+                <SheetDescription>
+                    <div className="flex flex-col gap-5  justify-center items-center  " >
+                        {navLinks.map((nav) => (
+                            <div key={nav.label} className="text-gray-900 text-base font-normal" >
+                                {nav.label}
+                            </div>
+                        ))}
+                    </div>
+                </SheetDescription>
+            </Sheet>
         </div>
-     );
+    );
 }
- 
+
 export default Navbar;
