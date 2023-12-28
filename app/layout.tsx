@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${fontSans.variable}`}>
+      <body className={`${fontSans.variable} fontSans `}>
         {children}
       </body>
     </html>
