@@ -44,8 +44,8 @@ const Navbar = () => {
             </Button>
 
             {/* Responsive Navbar / Hamburger Menu */}
-            <Sheet className="md:hidden" >
-                <SheetTrigger asChild>
+            <Sheet >
+                <SheetTrigger asChild className="md:hidden" >
                     <Button variant="outline"  >
                         <Menu />
                     </Button>
