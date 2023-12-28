@@ -25,15 +25,15 @@ const HeroSection = () => {
                 <div className="justify-start text-gray-900 text-8xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency 
                 </div>
-                <div className="w-[55rem] text-gray-900 text-2xl font-normal leading-9">
+                <div className="w-[55rem] text-gray-900 text-2xl font-light leading-9">
                     Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
                 </div>
             </div>
 
             <div className="flex gap-2 pt-12 " >
-                <div className="bg-orange rounded-[2.5rem] w-[32rem] h-[10rem] flex justify-center items-center gap-5 flex-wrap  " >
+                <div className="bg-orange rounded-[2.5rem] w-[32rem] h-[10rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
                     {heroContent.map((content) => (
-                        <div key={content.label} className="flex gap-2 ">
+                        <div key={content.label} className="flex gap-2 w-[11rem]">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
                                 {content.number}
                             </div>
