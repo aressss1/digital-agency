@@ -33,11 +33,11 @@ const HeroSection = () => {
             <div className="flex gap-2 pt-12 " >
                 <div className="bg-orange rounded-[2.5rem] w-[32rem] h-[10rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
                     {heroContent.map((content) => (
-                        <div key={content.label} className="flex gap-2 w-[11rem]">
+                        <div key={content.label} className="flex gap-4 w-[11rem]">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
                                 {content.number}
                             </div>
-                            <div className=" text-stone-50 text-lg font-normal leading-snug">
+                            <div className=" text-stone-50 text-base font-normal leading-snug">
                                 {content.label}
                             </div>
                         </div>
