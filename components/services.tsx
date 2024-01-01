@@ -45,7 +45,7 @@ const Services = () => {
                 />
                 <div className="flex flex-col gap-2" >
                     {servicesContent.map((service) => (
-                        <div className="flex items-start" >
+                        <div key={service.number} className="flex items-start" >
                             <div className="" >
                                 {service.number}
                             </div>
@@ -54,7 +54,7 @@ const Services = () => {
                                     {service.serviceName}
                                 </div>
                                 <div className=" text-gray-900 text-2xl font-normal leading-10">
-                                    Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
+                                    {service.serviceDescription}
                                 </div>
                             </div>
                         </div>
