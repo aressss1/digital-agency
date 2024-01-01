@@ -39,18 +39,18 @@ const HeroSection = () => {
 
                 <div className="bg-orange md:rounded-[2.5rem] rounded-[1.5rem] w-[29rem] h-[9rem] grid grid-cols-2 md:px-12 px-8 gap-5 py-3 grow" >
                     {heroContent.map((content) => (
-                        <div key={content.label} className="flex gap-4 items-center ">
-                            <div className=" h-11 text-stone-50 text-4xl font-bold">
+                        <div key={content.label} className="flex md:gap-4 gap-3 items-center ">
+                            <div className=" h-11 text-stone-50 md:text-4xl text-2xl font-bold">
                                 {content.number}
                             </div>
-                            <div className=" text-stone-50 text-base font-normal leading-snug">
+                            <div className=" text-stone-50 md:text-base text-sm font-normal leading-snug">
                                 {content.label}
                             </div>
                         </div>
                     ))}
                 </div>
 
-                <div className="bg-emerald md:rounded-[2.5rem] rounded-[1.5rem] w-[18rem] h-[9rem] overflow-hidden " >
+                <div className="bg-emerald md:rounded-[2.5rem] rounded-[1.5rem] md:w-[18rem] w-[14rem] md:h-[9rem] h-[7rem] overflow-hidden " >
                     <Image
                         src="hero-1.png"
                         alt="hero-1"
@@ -59,16 +59,16 @@ const HeroSection = () => {
                 </div>
 
                 <div className="flex flex-col gap-4" >
-                    <div className="bg-orange flex justify-around items-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] w-[13rem] h-[4rem] p-3 " >
+                    <div className="bg-orange flex justify-around items-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] md:w-[13rem] w-[10rem] md:h-[4rem] h-[3rem] p-3 " >
                         <Image
                             src="Loading.png"
                             alt="loading"
-                            className="h-[53px] lg:h-auto"
+                            className="h-[40px]  md:h-[53px] lg:h-auto"
                         />
                         <Image
                             src="emoji.png"
                             alt="emoji"
-                            className="h-[53px] lg:h-auto"
+                            className="h-[40px]  md:h-[53px] lg:h-auto"
                         />
                     </div>
                     <Button className="bg-amber text-black flex items-center justify-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] w-[13rem] h-[4rem]  " >
@@ -77,11 +77,11 @@ const HeroSection = () => {
                     </Button>
                 </div>
 
-                <div className="bg-pink md:rounded-[2.5rem] rounded-[1.5rem] w-[11rem] h-[9rem] overflow-hidden pl-3 pt-[.875rem]" >
+                <div className="bg-pink md:rounded-[2.5rem] rounded-[1.5rem] md:w-[11rem] w-[9rem] md:h-[9rem] h-[7rem] overflow-hidden pl-3 pt-[.875rem]" >
                     <Image
                         src="hero-2.png"
                         alt="hero-2"
-                        className="rounded-tl-[2.5rem]"
+                        className="md:rounded-tl-[2.5rem] rounded-tl-[1.5rem] "
                     />
                 </div>
             </div>
