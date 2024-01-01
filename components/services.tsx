@@ -40,8 +40,8 @@ const Services = () => {
             </div>
             <div className="flex justify-between" >
                 <Image
-                    src="servcies_banner.png"
-                    alt="servcies_banner"
+                    src="services_banner.png"
+                    alt="services_banner"
                 />
                 <div className="flex flex-col gap-2" >
                     {servicesContent.map((service) => (
