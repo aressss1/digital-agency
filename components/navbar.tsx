@@ -36,16 +36,18 @@ const Navbar = () => {
                     </div>
                 ))}
             </div>
-            <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
-                <p className="lg:mr-9 mr-5" >
-                    Contact Us
-                </p>
-                <Separator className="pt-[2px]" />
-            </Button>
+            <div className="flex gap-4" >
+                <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
+                    <p className="lg:mr-9 mr-5" >
+                        Contact Us
+                    </p>
+                    <Separator className="pt-[2px]" />
+                </Button>
 
-            <Button className="lg:hidden flex h-10 items-center justify-center rounded-none bg-special hover:rounded-3xl hover:bg-orange text-black  " >
-                <Menu />
-            </Button>
+                <Button className="lg:hidden flex h-10 items-center justify-center bg-white hover:text-orange text-black  " >
+                    <Menu />
+                </Button>
+            </div>
 
             {/* Responsive Navbar / Hamburger Menu */}
             {/* <Sheet >
