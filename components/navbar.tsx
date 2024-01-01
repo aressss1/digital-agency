@@ -26,8 +26,9 @@ const Navbar = () => {
     return (
         <div className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between" >
             <Image
-                src="Logo.svg"
+                src="logo-1.svg"
                 alt="logo"
+                className="text-orange"
             />
             <div className="hidden lg:flex gap-5  items-center  " >
                 {navLinks.map((nav) => (
