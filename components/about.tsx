@@ -11,7 +11,7 @@ const About = () => {
                 <div className="lg:w-[49rem] md:w-[22rem] text-stone-50 lg:text-6xl md:text-2xl text-xl font-medium ">
                     Provide the best service, with ideas that are out of the box
                 </div>
-                <div className="flex md:flex-row flex-col justify-between" >
+                <div className="flex md:flex-row flex-col gap-2 md:gap-0 justify-between" >
                     <div className="lg:w-[46rem] md:w-[25rem] text-stone-50 lg:text-xl md:text-sm text-sm font-normal lg:leading-10 md:leading-5">
                         Sed duis leo hendrerit tincidunt nisl. At eu ut sagittis sollicitudin quisque nisl. Lacinia convallis pulvinar lacinia pharetra nulla fringilla consectetur. Id facilisis ac pharetra vitae. Sed etiam orci lacus aliquam. Feugiat quam fringilla odio ornare dui sapien. Et consectetur nam ipsum eleifend.
                     </div>
