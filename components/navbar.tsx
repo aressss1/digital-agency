@@ -44,7 +44,7 @@ const Navbar = () => {
                     <Separator className="pt-[2px]" />
                 </Button>
 
-                <Button className="lg:hidden flex h-10 items-center justify-center bg-white hover:bg-white hover:text-orange text-black  " >
+                <Button className="lg:hidden flex h-10 items-center justify-center bg-stone-50 hover:bg-stone-50 hover:text-orange text-black  " >
                     <Menu />
                 </Button>
             </div>
