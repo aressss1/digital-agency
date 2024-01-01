@@ -26,18 +26,18 @@ const HeroSection = () => {
     return (
         <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
             <div className="flex flex-col gap-5" >
-                <div className="justify-start text-gray-900 text-8xl font-medium lg:leading-[7.5rem] ">
+                <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
                 </div>
-                <div className="w-[55rem] text-gray-900 text-2xl font-light leading-9">
+                <div className="lg:w-[55rem] md:w-[35rem]  text-gray-900 lg:text-2xl md:text-xl font-light leading-9">
                     Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
                 </div>
             </div>
 
             <div className="flex gap-4 pt-12 flex-wrap " >
-                <div className="bg-orange rounded-[2.5rem] w-[29rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 " >
+                <div className="bg-orange rounded-[2.5rem] w-[29rem] h-[9rem] flex justify-center items-center gap-5 flex-wrap py-3 grow lg:grow-0 " >
                     {heroContent.map((content) => (
-                        <div key={content.label} className="flex gap-4 w-[11rem]">
+                        <div key={content.label} className="flex gap-4 lg:w-[11rem] m:w-[15rem] items-center ">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
                                 {content.number}
                             </div>
@@ -61,10 +61,12 @@ const HeroSection = () => {
                         <Image
                             src="Loading.png"
                             alt="loading"
+                            className="h-[53px] lg:h-auto"
                         />
                         <Image
                             src="emoji.png"
                             alt="emoji"
+                            className="h-[53px] lg:h-auto"
                         />
                     </div>
                     <Button className="bg-amber text-black flex items-center justify-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem]  " >

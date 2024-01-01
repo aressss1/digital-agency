@@ -4,18 +4,18 @@ import { Button } from "./ui/button";
 const About = () => {
     return (
         <div className="lg:px-20 md:px-14 px-4 py-5 bg-stone-50  " >
-            <div className="bg-dark_blue flex flex-col gap-5 px-12 rounded-2xl py-12 " >
-                <div className="text-stone-50 text-lg font-light ">
+            <div className="bg-dark_blue flex flex-col gap-5 lg:px-12 md:px-8 rounded-2xl lg:py-12 md:py-8 " >
+                <div className="text-stone-50 lg:text-lg md:text-base font-light ">
                     01 / About
                 </div>
-                <div className="w-[49rem] text-stone-50 text-6xl font-medium ">
+                <div className="lg:w-[49rem] md:w-[22rem] text-stone-50 lg:text-6xl md:text-2xl font-medium ">
                     Provide the best service, with ideas that are out of the box
                 </div>
                 <div className="flex justify-between" >
-                    <div className="w-[46rem] text-stone-50 text-xl font-normal leading-10 ">
+                    <div className="lg:w-[46rem] md:w-[25rem] text-stone-50 lg:text-xl md:text-sm font-normal lg:leading-10 md:leading-5">
                         Sed duis leo hendrerit tincidunt nisl. At eu ut sagittis sollicitudin quisque nisl. Lacinia convallis pulvinar lacinia pharetra nulla fringilla consectetur. Id facilisis ac pharetra vitae. Sed etiam orci lacus aliquam. Feugiat quam fringilla odio ornare dui sapien. Et consectetur nam ipsum eleifend.
                     </div>
-                    <Button className="bg-amber text-black flex items-center gap-4 rounded-[2.5rem] w-[13rem] h-[5rem]  justify-center self-end" >
+                    <Button className="bg-amber text-black flex items-center gap-4 rounded-[2.5rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center self-end" >
                         Know More
                         <ArrowRight className="h-5" />
                     </Button>

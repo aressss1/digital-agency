@@ -31,7 +31,7 @@ const Navbar = () => {
             />
             <div className="hidden md:flex lg:gap-5 md:gap-3 items-center  " >
                 {navLinks.map((nav) => (
-                    <div key={nav.label} className="text-gray-900 text-base font-normal" >
+                    <div key={nav.label} className="text-gray-900 text-base  font-normal" >
                         {nav.label}
                     </div>
                 ))}
@@ -41,6 +41,10 @@ const Navbar = () => {
                     Contact Us
                 </p>
                 <Separator className="pt-[2px]" />
+            </Button>
+
+            <Button className="lg:hidden flex h-10 items-center justify-center rounded-none bg-special hover:bg-lime-600 text-black  " >
+                <Menu />
             </Button>
 
             {/* Responsive Navbar / Hamburger Menu */}
