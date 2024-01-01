@@ -43,17 +43,17 @@ const Services = () => {
                     src="services_banner.png"
                     alt="services_banner"
                 />
-                <div className="flex flex-col gap-2" >
+                <div className="flex flex-col gap-2 ml-[80px] " >
                     {servicesContent.map((service) => (
-                        <div key={service.number} className="flex items-start" >
-                            <div className="" >
+                        <div key={service.number} className="flex items-baseline gap-5" >
+                            <div className="text-xl " >
                                 {service.number}
                             </div>
                             <div className="flex flex-col gap-4" >
-                                <div className="text-dark_blue text-3xl font-semibold" >
+                                <div className="text-dark_blue text-2xl font-semibold" >
                                     {service.serviceName}
                                 </div>
-                                <div className=" text-gray-900 text-2xl font-normal leading-10">
+                                <div className=" text-gray-900 text-xl font-normal leading-8  ">
                                     {service.serviceDescription}
                                 </div>
                             </div>
