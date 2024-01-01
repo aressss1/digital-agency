@@ -71,7 +71,7 @@ const HeroSection = () => {
                             className="h-[40px]  md:h-[53px] lg:h-auto"
                         />
                     </div>
-                    <Button className="bg-amber text-black flex items-center justify-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] w-[13rem] h-[4rem]  " >
+                    <Button className="bg-amber text-black flex items-center justify-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] md:w-[13rem] w-[10rem] md:h-[4rem] h-[3rem]  " >
                         Know More
                         <ArrowRight className="h-5" />
                     </Button>
