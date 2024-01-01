@@ -37,7 +37,7 @@ const Navbar = () => {
                     </div>
                 ))}
             </div>
-            <div className="flex gap-4" >
+            <div className="flex md:gap-4" >
                 <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
                     <p className="lg:mr-9 mr-5" >
                         Contact Us

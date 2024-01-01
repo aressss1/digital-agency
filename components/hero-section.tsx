@@ -26,17 +26,17 @@ const HeroSection = () => {
     return (
         <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
             <div className="flex flex-col gap-5" >
-                <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl font-medium lg:leading-[7.5rem] ">
+                <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl text-2xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
                 </div>
-                <div className="lg:w-[55rem] md:w-[35rem]  text-gray-900 lg:text-2xl md:text-xl font-light leading-9">
+                <div className="lg:w-[55rem] md:w-[35rem] w-[14rem] text-gray-900 lg:text-2xl md:text-xl text-base font-light md:leading-9 leading-[1.75rem] ">
                     Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
                 </div>
             </div>
 
             <div className="flex gap-4 pt-12 flex-wrap " >
 
-                <div className="bg-orange rounded-[2.5rem] w-[29rem] h-[9rem] grid grid-cols-2 md:px-12 gap-5 py-3 grow  " >
+                <div className="bg-orange md:rounded-[2.5rem] rounded-[1.5rem] w-[29rem] h-[9rem] grid grid-cols-2 md:px-12 gap-5 py-3 grow  " >
                     {heroContent.map((content) => (
                         <div key={content.label} className="flex gap-4 items-center ">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
@@ -49,7 +49,7 @@ const HeroSection = () => {
                     ))}
                 </div>
 
-                <div className="bg-emerald rounded-[2.5rem] w-[18rem] h-[9rem] overflow-hidden " >
+                <div className="bg-emerald md:rounded-[2.5rem] rounded-[1.5rem] w-[18rem] h-[9rem] overflow-hidden " >
                     <Image
                         src="hero-1.png"
                         alt="hero-1"
@@ -58,7 +58,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="flex flex-col gap-4" >
-                    <div className="bg-orange flex justify-around items-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem] p-3 " >
+                    <div className="bg-orange flex justify-around items-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] w-[13rem] h-[4rem] p-3 " >
                         <Image
                             src="Loading.png"
                             alt="loading"
@@ -70,13 +70,13 @@ const HeroSection = () => {
                             className="h-[53px] lg:h-auto"
                         />
                     </div>
-                    <Button className="bg-amber text-black flex items-center justify-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem]  " >
+                    <Button className="bg-amber text-black flex items-center justify-center gap-4 md:rounded-[2.5rem] rounded-[1.5rem] w-[13rem] h-[4rem]  " >
                         Know More
                         <ArrowRight className="h-5" />
                     </Button>
                 </div>
 
-                <div className="bg-pink  rounded-[2.5rem] w-[11rem] h-[9rem] overflow-hidden pl-3 pt-[.875rem]" >
+                <div className="bg-pink md:rounded-[2.5rem] rounded-[1.5rem] w-[11rem] h-[9rem] overflow-hidden pl-3 pt-[.875rem]" >
                     <Image
                         src="hero-2.png"
                         alt="hero-2"
