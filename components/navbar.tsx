@@ -29,7 +29,7 @@ const Navbar = () => {
                 src="Logo.svg"
                 alt="logo"
             />
-            <div className="hidden md:flex lg:gap-5 md:gap-3 items-center  " >
+            <div className="hidden lg:flex gap-5  items-center  " >
                 {navLinks.map((nav) => (
                     <div key={nav.label} className="text-gray-900 text-base  font-normal" >
                         {nav.label}
@@ -43,7 +43,7 @@ const Navbar = () => {
                 <Separator className="pt-[2px]" />
             </Button>
 
-            <Button className="lg:hidden flex h-10 items-center justify-center rounded-none bg-special hover:bg-lime-600 text-black  " >
+            <Button className="lg:hidden flex h-10 items-center justify-center rounded-none bg-special hover:rounded-3xl hover:bg-orange text-black  " >
                 <Menu />
             </Button>
 
