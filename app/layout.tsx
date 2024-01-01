@@ -11,7 +11,7 @@ const montserrat = Montserrat({
  
 
 export const metadata: Metadata = {
-  title: 'Logoipsum',
+  title: 'Branding Agency',
   description: 'Best Digital Branding Agency in UK',
 }
 
