@@ -31,29 +31,29 @@ const Services = () => {
 
 
     return (
-        <div className="flex flex-col gap-8  lg:px-20 md:px-14 px-4 lg:py-16 bg-stone-50 " >
+        <div className="flex flex-col gap-8  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
             <div className="text-dark_blue lg:text-lg md:text-base text-sm font-light ">
                 02 / Services
             </div>
-            <div className="w-[56rem] text-dark_blue text-7xl font-medium leading-[5rem]">
+            <div className="lg:w-[56rem] w-[28rem] text-dark_blue lg:text-7xl text-4xl font-medium lg:leading-[5rem] leading-[3rem] ">
                 We offer several services for you
             </div>
-            <div className="flex justify-between" >
+            <div className="flex  justify-between" >
                 <Image
                     src="services_banner.png"
                     alt="services_banner"
                 />
-                <div className="flex flex-col gap-2 ml-[80px] " >
+                <div className="flex flex-col lg:gap-2 gap-4 ml-[80px] " >
                     {servicesContent.map((service) => (
-                        <div key={service.number} className="flex items-baseline gap-5" >
+                        <div key={service.number} className="flex items-baseline lg:gap-5 gap-3 font-semibold " >
                             <div className="text-xl " >
                                 {service.number}
                             </div>
                             <div className="flex flex-col gap-4" >
-                                <div className="text-dark_blue text-2xl font-semibold" >
+                                <div className="text-dark_blue lg:text-2xl text-xl font-semibold" >
                                     {service.serviceName}
                                 </div>
-                                <div className=" text-gray-900 text-xl font-normal leading-8  ">
+                                <div className=" text-gray-900 lg:text-xl text-base font-normal lg:leading-8 leading-5 ">
                                     {service.serviceDescription}
                                 </div>
                             </div>
