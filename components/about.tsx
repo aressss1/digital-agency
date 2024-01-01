@@ -4,7 +4,7 @@ import { Button } from "./ui/button";
 const About = () => {
     return (
         <div className="lg:px-20 md:px-14 px-4 py-5 bg-stone-50  " >
-            <div className="bg-dark_blue flex flex-col gap-5 px-8 rounded-2xl py-14 " >
+            <div className="bg-dark_blue flex flex-col gap-5 px-12 rounded-2xl py-12 " >
                 <div className="text-stone-50 text-lg font-light ">
                     01 / About
                 </div>
