@@ -31,11 +31,11 @@ const Services = () => {
 
 
     return (
-        <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
-            <div className="text-stone-50 lg:text-lg md:text-base text-sm font-light ">
+        <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-4 lg:py-16 bg-stone-50 " >
+            <div className="text-dark_blue lg:text-lg md:text-base text-sm font-light ">
                 02 / Services
             </div>
-            <div className=" text-gray-900 text-7xl font-medium ">
+            <div className="w-[56rem] text-dark_blue text-7xl font-medium leading-[5rem]">
                 We offer several services for you
             </div>
             <div className="flex justify-between" >
@@ -49,7 +49,7 @@ const Services = () => {
                             <div className="" >
                                 {service.number}
                             </div>
-                            <div className="flex gap-4" >
+                            <div className="flex flex-col gap-4" >
                                 <div className="text-dark_blue text-3xl font-semibold" >
                                     {service.serviceName}
                                 </div>
