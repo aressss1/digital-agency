@@ -25,6 +25,7 @@ const HeroSection = () => {
 
     return (
         <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
+
             <div className="flex flex-col gap-5" >
                 <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl text-2xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
@@ -36,7 +37,7 @@ const HeroSection = () => {
 
             <div className="flex gap-4 pt-12 flex-wrap " >
 
-                <div className="bg-orange md:rounded-[2.5rem] rounded-[1.5rem] w-[29rem] h-[9rem] grid grid-cols-2 md:px-12 gap-5 py-3 grow  " >
+                <div className="bg-orange md:rounded-[2.5rem] rounded-[1.5rem] w-[29rem] h-[9rem] grid grid-cols-2 md:px-12 px-8 gap-5 py-3 grow" >
                     {heroContent.map((content) => (
                         <div key={content.label} className="flex gap-4 items-center ">
                             <div className=" h-11 text-stone-50 text-4xl font-bold">
