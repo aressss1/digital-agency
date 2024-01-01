@@ -31,7 +31,7 @@ const Services = () => {
 
 
     return (
-        <div className="flex flex-col gap-6  lg:px-20 md:px-14 px-4 lg:py-16 bg-stone-50 " >
+        <div className="flex flex-col gap-8  lg:px-20 md:px-14 px-4 lg:py-16 bg-stone-50 " >
             <div className="text-dark_blue lg:text-lg md:text-base text-sm font-light ">
                 02 / Services
             </div>
