@@ -24,7 +24,7 @@ const HeroSection = () => {
 
 
     return (
-        <div className="flex flex-col lg:px-20 md:px-1 px-4 py-5 bg-stone-50 " >
+        <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
             <div className="flex flex-col gap-5" >
                 <div className="justify-start text-gray-900 text-8xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
@@ -67,7 +67,7 @@ const HeroSection = () => {
                             alt="emoji"
                         />
                     </div>
-                    <Button className="bg-amber flex items-center justify-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem]  " >
+                    <Button className="bg-amber text-black flex items-center justify-center gap-4 rounded-[2.5rem] w-[13rem] h-[4rem]  " >
                         Know More
                         <ArrowRight className="h-5" />
                     </Button>
