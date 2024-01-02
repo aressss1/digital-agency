@@ -62,20 +62,20 @@ const Work = () => {
                 </Button>
             </div>
 
-            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-col-4 overflow-x-auto no-scrollbar gap-4" >
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-4 overflow-x-auto no-scrollbar gap-4" >
                 {projectsContent.map((project) => (
                     <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
-                        <CardHeader>
+                        <CardHeader className="lg:p-6 md:p-5" >
                             <Image 
                                 src={project.imgSrc}
                                 alt="image"
-                                className="h-[72px] self-start"
+                                className="lg:h-[72px] h-[45px] self-start"
                             />
                             <CardTitle className=" text-stone-50 text-2xl font-semibold" >
                                 {project.title}
                             </CardTitle>
                         </CardHeader>
-                        <CardDescription className=" text-stone-50 text-xl font-normal leading-9 px-6 pb-6  " >
+                        <CardDescription className=" text-stone-50 text-xl font-normal lg:leading-9 md:leading-8 lg:px-6 md:px-5 lg:pb-6 md:pb-5  " >
                             {project.description}
                         </CardDescription>
                     </Card>
