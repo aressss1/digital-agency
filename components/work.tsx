@@ -62,7 +62,7 @@ const Work = () => {
                 </Button>
             </div>
 
-            <div className="grid grid-cols-4 gap-4" >
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-col-4 overflow-x-auto no-scrollbar gap-4" >
                 {projectsContent.map((project) => (
                     <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
                         <CardHeader>
