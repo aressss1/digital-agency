@@ -50,7 +50,7 @@ const Work = () => {
 
             <div className="grid grid-cols-4 gap-4" >
                 {projectsContent.map((project) => (
-                    <Card className="bg-orange" >
+                    <Card key={project.id} className="bg-orange" >
                         <CardHeader>
                             <Image 
                                 src={project.imgSrc}
