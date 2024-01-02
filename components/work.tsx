@@ -50,17 +50,18 @@ const Work = () => {
 
             <div className="grid grid-cols-4 gap-4" >
                 {projectsContent.map((project) => (
-                    <Card key={project.id} className="bg-orange" >
+                    <Card key={project.id} className="bg-orange rounded-[2rem] " >
                         <CardHeader>
                             <Image 
                                 src={project.imgSrc}
                                 alt="image"
+                                className="h-[72px] self-start"
                             />
-                            <CardTitle className=" text-stone-50 text-4xl font-semibold" >
+                            <CardTitle className=" text-stone-50 text-2xl font-semibold" >
                                 {project.title}
                             </CardTitle>
                         </CardHeader>
-                        <CardDescription className=" text-stone-50 text-2xl font-normal leading-10" >
+                        <CardDescription className=" text-stone-50 text-xl font-normal leading-10 px-6  " >
                             {project.description}
                         </CardDescription>
                     </Card>
