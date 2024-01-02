@@ -52,11 +52,11 @@ const Work = () => {
                 03 / Work
             </div>
 
-            <div className="flex justify-between" >
+            <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-1" >
                 <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-3xl  font-medium lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
                     The projects we have done
                 </div>
-                <Button className="bg-amber text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center self-center" >
+                <Button className="bg-amber text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center md:self-center self-end " >
                     Know More
                     <ArrowRight className="h-5" />
                 </Button>
@@ -65,17 +65,17 @@ const Work = () => {
             <div className="grid lg:grid-cols-4 md:grid-cols-2 custom-grid-cols overflow-x-auto no-scrollbar gap-4" >
                 {projectsContent.map((project) => (
                     <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
-                        <CardHeader className="lg:p-6 md:p-5" >
+                        <CardHeader className="lg:p-6 md:p-5 p-4" >
                             <Image 
                                 src={project.imgSrc}
                                 alt="image"
-                                className="lg:h-[72px] h-[45px] self-start"
+                                className="lg:h-[72px] md:h-[45px] h-[38px] self-start"
                             />
-                            <CardTitle className=" text-stone-50 text-2xl font-semibold" >
+                            <CardTitle className=" text-stone-50 md:text-2xl text-lg font-semibold" >
                                 {project.title}
                             </CardTitle>
                         </CardHeader>
-                        <CardDescription className=" text-stone-50 text-xl font-normal lg:leading-9 md:leading-8 lg:px-6 md:px-5 lg:pb-6 md:pb-5  " >
+                        <CardDescription className=" text-stone-50 md:text-xl text-base font-normal lg:leading-9 md:leading-8 lg:px-6 md:px-5 px-4 lg:pb-6 md:pb-5 pb-4 " >
                             {project.description}
                         </CardDescription>
                     </Card>
