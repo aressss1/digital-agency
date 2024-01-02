@@ -27,7 +27,7 @@ const HeroSection = () => {
         <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
 
             <div className="flex flex-col gap-5" >
-                <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl text-2xl font-medium lg:leading-[7.5rem] ">
+                <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl text-3xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
                 </div>
                 <div className="lg:w-[55rem] md:w-[35rem] w-[14rem] text-gray-900 lg:text-2xl md:text-xl text-base font-light md:leading-9 leading-[1.75rem] ">
