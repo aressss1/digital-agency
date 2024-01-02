@@ -31,6 +31,20 @@ const Work = () => {
         },
     ]
 
+    const getBgColorClass = (id: number) => {
+        switch (id) {
+            case 1:
+                return 'bg-orange';
+            case 2:
+                return 'bg-emerald';
+            case 3:
+                return 'bg-amber';
+            case 4:
+                return 'bg-pink';
+            default:
+                return 'bg-orange'; 
+        }
+    };
 
     return (
         <div className="flex flex-col md:gap-8 gap-6  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
@@ -50,7 +64,7 @@ const Work = () => {
 
             <div className="grid grid-cols-4 gap-4" >
                 {projectsContent.map((project) => (
-                    <Card key={project.id} className="bg-orange rounded-[2rem] " >
+                    <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
                         <CardHeader>
                             <Image 
                                 src={project.imgSrc}
@@ -61,7 +75,7 @@ const Work = () => {
                                 {project.title}
                             </CardTitle>
                         </CardHeader>
-                        <CardDescription className=" text-stone-50 text-xl font-normal leading-10 px-6  " >
+                        <CardDescription className=" text-stone-50 text-xl font-normal leading-9 px-6 pb-6  " >
                             {project.description}
                         </CardDescription>
                     </Card>
