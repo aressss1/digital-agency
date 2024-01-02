@@ -38,12 +38,13 @@ const Services = () => {
             <div className="lg:w-[56rem] w-[28rem] text-dark_blue lg:text-7xl text-4xl font-medium lg:leading-[5rem] leading-[3rem] ">
                 We offer several services for you
             </div>
-            <div className="flex  justify-between" >
+            <div className="flex lg:flex-row flex-col gap-10  justify-between" >
                 <Image
                     src="services_banner.png"
                     alt="services_banner"
+                    className="lg:h-auto lg:w-auto md:h-[27rem] md:w-[24rem]"
                 />
-                <div className="flex flex-col lg:gap-2 gap-4 ml-[80px] " >
+                <div className="flex flex-col lg:gap-2 gap-4 lg:ml-[80px] " >
                     {servicesContent.map((service) => (
                         <div key={service.number} className="flex items-baseline lg:gap-5 gap-3 font-semibold " >
                             <div className="text-xl " >
