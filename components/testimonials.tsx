@@ -63,13 +63,13 @@ const Testimonails = () => {
                                     </div>
 
 
-                                    <div className="flex md:gap-8 gap-4 items-center " >
+                                    <div className="flex md:gap-8 gap-4 pl-12 items-center " >
                                         <Image
                                             src={testimonial.authorImg}
                                             alt={testimonial.authorName}
                                             className="lg:h-28 lg:w-28 md:w-20 md:h-20 w-16 h-16 rounded-full object-cover "
                                         />
-                                        <div className="flex flex-col md:gap-3 pl-12 justify-center" >
+                                        <div className="flex flex-col md:gap-3 justify-center" >
                                             <div className=" text-stone-50 lg:text-4xl md:text-2xl text-lg font-medium" >
                                                 {testimonial.authorName}
                                             </div>
