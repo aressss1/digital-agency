@@ -59,7 +59,7 @@ const Testimonails = () => {
                                     <div className="lg:w-[58rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
                                         <Quote className="rotate-180 h-12 w-48 "  />
                                         {testimonial.content}
-                                         <Quote className="h-12 w-48 absolute right-0 bottom-0 "  />
+                                         {/* <Quote className="h-12 w-48 absolute right-[-125px] bottom-[21px] "  /> */}
                                     </div>
 
 
