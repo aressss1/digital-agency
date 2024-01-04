@@ -48,29 +48,29 @@ const Testimonails = () => {
                     opts={{
                         align: "start",
                         loop: true,
-                      }}
+                    }}
                 >
                     <CarouselContent>
                         {testimonialsContent.map((testimonial) => (
                             <CarouselItem key={testimonial.id} >
                                 <div className="flex flex-col gap-12" >
 
-                                    <div className="w-[56rem] text-stone-50 text-6xl leading-[4rem] font-medium " >
-                                        {testimonial.content  }
+                                    <div className="lg:w-[56rem] md:w-[32rem] text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium " >
+                                        {testimonial.content}
                                     </div>
 
 
-                                    <div className="flex gap-8 items-center " >
+                                    <div className="flex md:gap-8 gap-4 items-center " >
                                         <Image
                                             src={testimonial.authorImg}
                                             alt={testimonial.authorName}
-                                            className="h-28 w-28 rounded-full object-cover "
+                                            className="lg:h-28 lg:w-28 md:w-20 md:h-20 w-16 h-16 rounded-full object-cover "
                                         />
-                                        <div className="flex flex-col gap-3 justify-center" >
-                                            <div className=" text-stone-50 text-4xl font-medium" >
+                                        <div className="flex flex-col justify-center" >
+                                            <div className=" text-stone-50 lg:text-4xl md:text-2xl text-lg font-medium" >
                                                 {testimonial.authorName}
                                             </div>
-                                            <div className=" text-stone-50  self-baseline text-2xl font-normal" >
+                                            <div className=" text-stone-50  self-baseline lg:text-2xl md:text-xl text-base lg:font-normal md:font-light" >
                                                 {testimonial.authorRole}
                                             </div>
                                         </div>
