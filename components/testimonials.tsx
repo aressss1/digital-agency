@@ -35,7 +35,7 @@ const Testimonails = () => {
                     <CarouselContent>
                         {testimonialsContent.map((testimonial) => (
                             <div className="flex flex-col gap-4" key={testimonial.id} >
-                                <CarouselItem className="basis-1/1" >
+                                <CarouselItem  >
                                     <div className=" text-stone-50 text-7xl font-medium " >
                                         {testimonial.content}
                                     </div>
