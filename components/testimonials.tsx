@@ -39,8 +39,8 @@ const Testimonails = () => {
                                     <div className=" text-stone-50 text-2xl font-medium " >
                                         {testimonial.content}
                                     </div>
-                                </CarouselItem>
-                                <div className="flex justify-between" >
+                                    
+                                    <div className="flex justify-between" >
                                     <div className="flex gap-2" >
                                         <Image 
                                             src={testimonial.authorImg}
@@ -59,6 +59,9 @@ const Testimonails = () => {
                                     <CarouselNext  className="bg-amber text-white" />
                                     <CarouselPrevious  className="bg-orange text-white" />
                                 </div>
+
+                                </CarouselItem>
+                                
                             </div>
                         ))}
                     </CarouselContent>
