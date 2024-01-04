@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
+import Autoplay from "embla-carousel-autoplay"
 
 const Testimonails = () => {
     const testimonialsContent = [
@@ -38,7 +39,17 @@ const Testimonails = () => {
     return (
         <div className="bg-dark_blue" >
             <div className="lg:px-24 md:px-14 px-4 lg:py-16 py-10" >
-                <Carousel>
+                <Carousel
+                    plugins={[
+                        Autoplay({
+                            delay: 2000,
+                          }),
+                    ]}
+                    opts={{
+                        align: "start",
+                        loop: true,
+                      }}
+                >
                     <CarouselContent>
                         {testimonialsContent.map((testimonial) => (
                             <CarouselItem key={testimonial.id} >
