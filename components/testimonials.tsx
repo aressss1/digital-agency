@@ -10,7 +10,7 @@ const Testimonails = () => {
             content: "‘I really enjoyed working with you guys, you guys are ver communicative and quick to do the job. I can’t wait to work with you again!!’",
             authorName: "John Doe",
             authorRole: "CEO at BigSpook",
-            authorImg: "/clients/client-1.png"
+            authorImg: "/clients/client-1.jpg"
         },
         // {
         //     id: 2,
@@ -47,13 +47,13 @@ const Testimonails = () => {
                                             <Image
                                                 src={testimonial.authorImg}
                                                 alt={testimonial.authorName}
-                                                className="h-40 w-40 rounded-full"
+                                                className="h-28 w-28 rounded-full"
                                             />
                                             <div className="flex flex-col gap-3 items-center justify-center" >
                                                 <div className=" text-stone-50 text-4xl font-medium" >
                                                     {testimonial.authorName}
                                                 </div>
-                                                <div className=" text-stone-50 text-2xl font-normal" >
+                                                <div className=" text-stone-50 pl-5 text-2xl font-light" >
                                                     {testimonial.authorRole}
                                                 </div>
                                             </div>
