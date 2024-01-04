@@ -42,19 +42,27 @@ const Testimonails = () => {
                                             {testimonial.content}
                                         </div>
 
-                                        <div className="flex gap-2" >
-                                            <Image
-                                                src={testimonial.authorImg}
-                                                alt={testimonial.authorName}
-                                            />
-                                            <div className="flex flex-col gap-3 items-center justify-center" >
-                                                <div className=" text-stone-50 text-4xl font-medium" >
-                                                    {testimonial.authorName}
-                                                </div>
-                                                <div className=" text-stone-50 text-2xl font-normal" >
-                                                    {testimonial.authorRole}
+                                        <div className="flex justify-between" >
+
+                                            <div className="flex gap-2" >
+                                                <Image
+                                                    src={testimonial.authorImg}
+                                                    alt={testimonial.authorName}
+                                                />
+                                                <div className="flex flex-col gap-3 items-center justify-center" >
+                                                    <div className=" text-stone-50 text-4xl font-medium" >
+                                                        {testimonial.authorName}
+                                                    </div>
+                                                    <div className=" text-stone-50 text-2xl font-normal" >
+                                                        {testimonial.authorRole}
+                                                    </div>
                                                 </div>
                                             </div>
+
+
+                                            <CarouselNext className="bg-amber text-white" />
+                                            <CarouselPrevious className="bg-orange text-white" />
+
                                         </div>
 
                                     </div>
@@ -63,8 +71,6 @@ const Testimonails = () => {
                         ))}
                     </CarouselContent>
 
-                    <CarouselNext className="bg-amber text-white" />
-                    <CarouselPrevious className="bg-orange text-white" />
                 </Carousel>
             </div>
         </div>
