@@ -56,14 +56,13 @@ const Testimonails = () => {
                             <CarouselItem key={testimonial.id} >
                                 <div className="flex flex-col gap-12" >
 
-                                    <div className="lg:w-[58rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
-                                        <Quote className="rotate-180 h-12 w-48 "  />
+                                    <div className="lg:w-[59rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
+                                        <Quote className="rotate-180 lg:h-12 lg:w-48 md:h-8 md:w-40 w-20 h-4 "  />
                                         {testimonial.content}
-                                         <Quote className="h-12 w-48 absolute right-[-125px] bottom-[21px] "  />
                                     </div>
 
 
-                                    <div className="flex md:gap-8 gap-4 pl-12 items-center " >
+                                    <div className="flex md:gap-8 gap-4 lg:pl-12 pl-8 items-center " >
                                         <Image
                                             src={testimonial.authorImg}
                                             alt={testimonial.authorName}
