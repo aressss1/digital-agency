@@ -69,8 +69,8 @@ const Testimonails = () => {
                         ))}
                     </CarouselContent>
 
-                    <CarouselNext className="bg-amber text-white" />
-                    <CarouselPrevious className="bg-orange text-white" />
+                    <CarouselNext className="bg-amber text-white border-0 " />
+                    <CarouselPrevious className="bg-orange text-white border-0 " />
                 </Carousel>
             </div>
         </div>
