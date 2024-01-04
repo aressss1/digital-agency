@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
+import { Quote } from 'lucide-react';
 
 const Testimonails = () => {
     const testimonialsContent = [
@@ -55,7 +56,8 @@ const Testimonails = () => {
                             <CarouselItem key={testimonial.id} >
                                 <div className="flex flex-col gap-12" >
 
-                                    <div className="lg:w-[56rem] md:w-[32rem] text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium " >
+                                    <div className="lg:w-[56rem] md:w-[32rem] flex flex-col text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium " >
+                                        <Quote />
                                         {testimonial.content}
                                     </div>
 
