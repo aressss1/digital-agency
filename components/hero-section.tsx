@@ -54,7 +54,7 @@ const HeroSection = () => {
                     <Image
                         src="hero-1.png"
                         alt="hero-1"
-                        className="object-contain pl-9"
+                        className="object-contain pl-9 h-[111px] md:h-auto"
                     />
                 </div>
 
@@ -81,7 +81,7 @@ const HeroSection = () => {
                     <Image
                         src="hero-2.png"
                         alt="hero-2"
-                        className="md:rounded-tl-[2.5rem] rounded-tl-[1.5rem] "
+                        className="md:rounded-tl-[2.5rem] rounded-tl-[1.5rem] h-[105px] md:h-auto "
                     />
                 </div>
             </div>
