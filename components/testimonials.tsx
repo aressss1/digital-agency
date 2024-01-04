@@ -42,7 +42,7 @@ const Testimonails = () => {
                                             {testimonial.content}
                                         </div>
 
-                                        <div className="flex justify-between" >
+                                        <div className="flex justify-between relative " >
 
                                             <div className="flex gap-2" >
                                                 <Image
