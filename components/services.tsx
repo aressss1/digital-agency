@@ -51,7 +51,7 @@ const Services = () => {
                                 {service.number}
                             </div>
                             <div className="flex flex-col gap-4" >
-                                <div className=" text-orange md:text-dark_blue lg:text-2xl md:text-xl text-lg font-semibold group-hover:text-orange" >
+                                <div className="text-dark_blue lg:text-2xl md:text-xl text-lg font-semibold group-hover:text-orange" >
                                     {service.serviceName}
                                 </div>
                                 <div className=" text-gray-900 lg:text-xl  text-base font-normal lg:leading-8 leading-5 ">
