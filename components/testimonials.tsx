@@ -39,36 +39,31 @@ const Testimonails = () => {
                                     <div className="flex flex-col gap-3" >
 
                                         <div className=" text-stone-50 text-2xl font-medium " >
-                                            <p>{testimonial.content}</p>
+                                            {testimonial.content}
                                         </div>
 
-                                        <div className="flex justify-between relative " >
 
-                                            <div className="flex gap-2" >
-                                                <Image
-                                                    src={testimonial.authorImg}
-                                                    alt={testimonial.authorName}
-                                                />
-                                                <div className="flex flex-col gap-3 items-center justify-center" >
-                                                    <div className=" text-stone-50 text-4xl font-medium" >
-                                                        {testimonial.authorName}
-                                                    </div>
-                                                    <div className=" text-stone-50 text-2xl font-normal" >
-                                                        {testimonial.authorRole}
-                                                    </div>
+                                        <div className="flex gap-2" >
+                                            <Image
+                                                src={testimonial.authorImg}
+                                                alt={testimonial.authorName}
+                                            />
+                                            <div className="flex flex-col gap-3 items-center justify-center" >
+                                                <div className=" text-stone-50 text-4xl font-medium" >
+                                                    {testimonial.authorName}
+                                                </div>
+                                                <div className=" text-stone-50 text-2xl font-normal" >
+                                                    {testimonial.authorRole}
                                                 </div>
                                             </div>
-
-
-                                            <CarouselNext className="bg-amber text-white" />
-                                            <CarouselPrevious className="bg-orange text-white" />
-
                                         </div>
-
                                     </div>
                                 </CarouselItem>
                             </div>
                         ))}
+
+                        <CarouselNext className="bg-amber text-white" />
+                        <CarouselPrevious className="bg-orange text-white" />
                     </CarouselContent>
 
                 </Carousel>
