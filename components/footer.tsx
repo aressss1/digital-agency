@@ -28,7 +28,7 @@ const Footer = () => {
                             alt="Logo"
                             className="h-9"
                         />
-                        <div className="text-stone-50 text-2xl font-medium" >
+                        <div className="text-stone-50 md:text-2xl text-lg font-medium" >
                             Branding Agency
                         </div>
                     </div>
