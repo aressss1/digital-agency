@@ -39,7 +39,7 @@ const Testimonails = () => {
                                     <div className="flex flex-col gap-3" >
 
                                         <div className=" text-stone-50 text-2xl font-medium " >
-                                            {testimonial.content}
+                                            <p>{testimonial.content}</p>
                                         </div>
 
                                         <div className="flex justify-between relative " >
