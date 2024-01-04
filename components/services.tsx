@@ -47,11 +47,11 @@ const Services = () => {
                 <div className="flex flex-col md:w-[39rem] lg:w-auto lg:gap-2 gap-4 lg:ml-[80px] " >
                     {servicesContent.map((service) => (
                         <div key={service.number} className="group  flex items-baseline gap-5  font-semibold " >
-                            <div className="md:text-xl text-lg group-hover:text-orange" >
+                            <div className="md:text-xl text-lg text-orange md:text-dark_blue group-hover:text-orange" >
                                 {service.number}
                             </div>
                             <div className="flex flex-col gap-4" >
-                                <div className="text-dark_blue lg:text-2xl md:text-xl text-lg font-semibold group-hover:text-orange" >
+                                <div className=" text-orange md:text-dark_blue lg:text-2xl md:text-xl text-lg font-semibold group-hover:text-orange" >
                                     {service.serviceName}
                                 </div>
                                 <div className=" text-gray-900 lg:text-xl  text-base font-normal lg:leading-8 leading-5 ">
