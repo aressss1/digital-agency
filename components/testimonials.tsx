@@ -12,20 +12,20 @@ const Testimonails = () => {
             authorRole: "CEO at BigSpook",
             authorImg: "/clients/client-1.png"
         },
-        {
-            id: 2,
-            content: "‘I really enjoyed working with you guys, you guys are ver communicative and quick to do the job. I can’t wait to work with you again!!’",
-            authorName: "John Doe",
-            authorRole: "CEO at BigSpook",
-            authorImg: "/clients/client-1.png"
-        },
-        {
-            id: 3,
-            content: "‘I really enjoyed working with you guys, you guys are ver communicative and quick to do the job. I can’t wait to work with you again!!’",
-            authorName: "John Doe",
-            authorRole: "CEO at BigSpook",
-            authorImg: "/clients/client-1.png"
-        },
+        // {
+        //     id: 2,
+        //     content: "‘I really enjoyed working with you guys, you guys are ver communicative and quick to do the job. I can’t wait to work with you again!!’",
+        //     authorName: "John Doe",
+        //     authorRole: "CEO at BigSpook",
+        //     authorImg: "/clients/client-1.png"
+        // },
+        // {
+        //     id: 3,
+        //     content: "‘I really enjoyed working with you guys, you guys are ver communicative and quick to do the job. I can’t wait to work with you again!!’",
+        //     authorName: "John Doe",
+        //     authorRole: "CEO at BigSpook",
+        //     authorImg: "/clients/client-1.png"
+        // },
     ]
 
     return (
@@ -36,7 +36,7 @@ const Testimonails = () => {
                         {testimonialsContent.map((testimonial) => (
                             <div className="flex flex-col gap-4" key={testimonial.id} >
                                 <CarouselItem  >
-                                    <div className=" text-stone-50 text-7xl font-medium " >
+                                    <div className=" text-stone-50 text-2xl font-medium " >
                                         {testimonial.content}
                                     </div>
                                 </CarouselItem>
