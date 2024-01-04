@@ -56,8 +56,8 @@ const Testimonails = () => {
                             <CarouselItem key={testimonial.id} >
                                 <div className="flex flex-col gap-12" >
 
-                                    <div className="lg:w-[56rem] md:w-[32rem] flex flex-col text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium " >
-                                        <Quote />
+                                    <div className="lg:w-[56rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium " >
+                                        <Quote className="rotate-180" />
                                         {testimonial.content}
                                     </div>
 
