@@ -36,9 +36,9 @@ const Testimonails = () => {
                         {testimonialsContent.map((testimonial) => (
                             <div className="flex flex-col gap-4" key={testimonial.id} >
                                 <CarouselItem  >
-                                    <div className="flex flex-col gap-3" >
+                                    <div className="flex flex-col gap-12" >
 
-                                        <div className=" text-stone-50 text-2xl font-medium " >
+                                        <div className="w-[56rem] text-stone-50 text-6xl font-medium " >
                                             {testimonial.content}
                                         </div>
 
@@ -47,6 +47,7 @@ const Testimonails = () => {
                                             <Image
                                                 src={testimonial.authorImg}
                                                 alt={testimonial.authorName}
+                                                className="h-40 w-40 rounded-full"
                                             />
                                             <div className="flex flex-col gap-3 items-center justify-center" >
                                                 <div className=" text-stone-50 text-4xl font-medium" >
