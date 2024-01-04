@@ -59,7 +59,7 @@ const Testimonails = () => {
                                     <div className="lg:w-[58rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
                                         <Quote className="rotate-180 h-12 w-48 "  />
                                         {testimonial.content}
-                                         {/* <Quote className="h-12 w-48 absolute right-[-125px] bottom-[21px] "  /> */}
+                                         <Quote className="h-12 w-48 absolute right-[-125px] bottom-[21px] "  />
                                     </div>
 
 
@@ -69,7 +69,7 @@ const Testimonails = () => {
                                             alt={testimonial.authorName}
                                             className="lg:h-28 lg:w-28 md:w-20 md:h-20 w-16 h-16 rounded-full object-cover "
                                         />
-                                        <div className="flex flex-col md:gap-3  justify-center" >
+                                        <div className="flex flex-col md:gap-3 pl-12 justify-center" >
                                             <div className=" text-stone-50 lg:text-4xl md:text-2xl text-lg font-medium" >
                                                 {testimonial.authorName}
                                             </div>
