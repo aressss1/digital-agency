@@ -41,11 +41,11 @@ const Testimonails = () => {
         <div className="bg-dark_blue" >
             <div className="lg:px-28 md:px-14 px-4 lg:py-16 py-10" >
                 <Carousel
-                    // plugins={[
-                    //     Autoplay({
-                    //         delay: 4000,
-                    //       }),
-                    // ]}
+                    plugins={[
+                        Autoplay({
+                            delay: 3000,
+                          }),
+                    ]}
                     opts={{
                         align: "start",
                         loop: true,
