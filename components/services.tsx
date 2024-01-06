@@ -31,11 +31,11 @@ const Services = () => {
 
 
     return (
-        <div className="flex flex-col md:gap-8 gap-6  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
-            <div className="text-dark_blue lg:text-lg md:text-base text-sm font-light ">
+        <div className="flex flex-col md:gap-8 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
+            <div className="text-dark_blue lg:text-lg md:text-base text-sm font-normal ">
                 02 / Services
             </div>
-            <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-3xl  font-medium lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
+            <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-4xl  md:font-medium font-semibold lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
                 We offer several services for you
             </div>
             <div className="flex lg:flex-row flex-col gap-10  justify-between" >

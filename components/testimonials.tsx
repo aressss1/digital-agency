@@ -39,7 +39,7 @@ const Testimonails = () => {
 
     return (
         <div className="bg-dark_blue" >
-            <div className="lg:px-28 md:px-14 px-4 lg:py-16 py-10" >
+            <div className="lg:px-28 md:px-14 px-4 lg:py-16 py-14" >
                 <Carousel
                     // plugins={[
                     //     Autoplay({
@@ -54,7 +54,7 @@ const Testimonails = () => {
                     <CarouselContent>
                         {testimonialsContent.map((testimonial) => (
                             <CarouselItem key={testimonial.id} >
-                                <div className="flex flex-col gap-12" >
+                                <div className="flex flex-col md:gap-12 gap-8 " >
 
                                     <div className="lg:w-[59rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
                                         <Quote className="rotate-180 lg:h-12 lg:w-48 md:h-8 md:w-40 w-20 h-4 "  />

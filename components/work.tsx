@@ -47,13 +47,13 @@ const Work = () => {
     };
 
     return (
-        <div className="flex flex-col md:gap-8 gap-6  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
-            <div className="text-dark_blue lg:text-lg md:text-base text-sm font-light ">
+        <div className="flex flex-col md:gap-8 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
+            <div className="text-dark_blue lg:text-lg md:text-base text-sm font-normal ">
                 03 / Work
             </div>
 
             <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-1" >
-                <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-3xl  font-medium lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
+                <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-3xl  md:font-medium font-semibold lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
                     The projects we have done
                 </div>
                 <Button className="bg-amber text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center md:self-center self-end " >

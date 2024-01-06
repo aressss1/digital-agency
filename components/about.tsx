@@ -12,7 +12,7 @@ const About = () => {
                     Provide the best service, with ideas that are out of the box
                 </div>
                 <div className="flex md:flex-row flex-col gap-2 md:gap-0 justify-between" >
-                    <div className="lg:w-[46rem] md:w-[25rem] text-stone-50 lg:text-xl md:text-sm text-sm font-normal lg:leading-10 md:leading-5">
+                    <div className="lg:w-[46rem] md:w-[25rem] text-stone-50 lg:text-xl md:text-sm text-sm font-normal lg:leading-10 leading-6  ">
                         Sed duis leo hendrerit tincidunt nisl. At eu ut sagittis sollicitudin quisque nisl. Lacinia convallis pulvinar lacinia pharetra nulla fringilla consectetur. Id facilisis ac pharetra vitae. Sed etiam orci lacus aliquam. Feugiat quam fringilla odio ornare dui sapien. Et consectetur nam ipsum eleifend.
                     </div>
                     <Button className="bg-amber text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center self-end" >
