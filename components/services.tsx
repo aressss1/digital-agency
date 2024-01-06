@@ -35,7 +35,7 @@ const Services = () => {
             <div className="text-dark_blue lg:text-lg md:text-base text-sm font-normal ">
                 02 / Services
             </div>
-            <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-4xl  md:font-medium font-semibold lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
+            <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-3xl  md:font-medium font-semibold lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
                 We offer several services for you
             </div>
             <div className="flex lg:flex-row flex-col gap-10  justify-between" >
