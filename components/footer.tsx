@@ -37,6 +37,18 @@ const Footer = () => {
                     </div>
                 </div>
 
+                <div className="py-6" >
+                    <span className="text-stone-50 text-2xl font-normal flex ">
+                        Designed by 
+                        <Button variant="link" >
+                            Sakila 
+                        </Button>
+                        Developed by
+                        <Button variant="link" >
+                            Faizan Asghar 
+                        </Button>
+                        </span>
+                </div>
                 </div>
             </div>
         </div>

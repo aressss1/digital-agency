@@ -47,7 +47,7 @@ const Work = () => {
     };
 
     return (
-        <div className="flex flex-col md:gap-8 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
+        <div className="flex flex-col md:gap-6 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 " >
             <div className="text-dark_blue lg:text-lg md:text-base text-sm font-normal ">
                 03 / Work
             </div>
