@@ -4,25 +4,11 @@ import { motion } from "framer-motion";
 
 const About = () => {
     const parentVaraiant = {
-        visible: { 
-            opacity: 1, 
+        visible: {
+            opacity: 1,
             y: 0,
-            // transition: {
-            //     when: "beforeChildren",
-            //     staggerChildren: 0.3,
-            //   },
-        
         },
-        hidden: { opacity: 0, y: 200},
-    }
-
-    const childVariant = {
-        visible: { opacity: 1, y: -50 },
-        hidden: { opacity: 0, y: 0 },
-        transition: {
-            when: "beforeChildren",
-            staggerChildren: 0.3,
-          },
+        hidden: { opacity: 0, y: 200 },
     }
 
     return (
@@ -31,16 +17,15 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ 
-                duration: 0.6, 
+            transition={{
+                duration: 0.6,
                 ease: "easeInOut"
             }}
             variants={parentVaraiant}
         >
-            <div 
+            <div
                 className="bg-dark_blue flex flex-col gap-5 lg:px-12 md:px-8 px-4 rounded-2xl lg:py-12 md:py-8 py-4 "
-                // variants={childVariant}
-                >
+            >
                 <div className="text-stone-50 lg:text-lg md:text-base text-sm font-light ">
                     01 / About
                 </div>
