@@ -40,7 +40,7 @@ const Services = () => {
 
     return (
         <div
-            className="flex flex-col md:gap-6 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 "
+            className="flex flex-col md:gap-8 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 "
         >
             <div
              className="flex flex-col md:gap-6 gap-4" 
@@ -74,7 +74,7 @@ const Services = () => {
                     <Image
                         src="services_banner.png"
                         alt="services_banner"
-                        className="lg:h-auto lg:w-[29rem] md:h-[27rem] md:w-[24rem] w-[18rem] h-[22rem] "
+                        className="lg:h-auto lg:w-[46rem] md:h-[27rem] md:w-[24rem] w-[18rem] h-[22rem] "
                     />
                 </div>
 
