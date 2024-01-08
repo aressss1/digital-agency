@@ -41,13 +41,13 @@ const Footer = () => {
             </div>
 
             <div className="py-6" >
-                    <span className="text-stone-50 text-xl font-extralight flex items-center justify-center ">
+                    <span className="text-stone-50 lg:text-xl md:text-base text-sm font-extralight flex md:flex-row flex-col gap-2 md:gap-0 items-center justify-center ">
                         Designed by
-                        <Button variant="link" className="text-stone-50 text-xl font-normal">
+                        <Button variant="link" className="text-stone-50 lg:text-xl md:text-base text-sm font-normal px-2">
                         Sakila Pokharel  
                         </Button>
                         Developed by
-                        <Button variant="link" className="text-stone-50 text-xl font-normal">
+                        <Button variant="link" className="text-stone-50 lg:text-xl md:text-base text-sm font-normal px-2">
                             Faizan Asghar 
                         </Button>
                         </span>
