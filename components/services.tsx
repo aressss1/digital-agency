@@ -72,6 +72,8 @@ const Services = () => {
                 <motion.div
                     variants={childVariant1}
                     viewport={{ once: true }}
+                    initial="hidden"
+                    whileInView="visible"
                     transition={{
                         duration: 0.6,
                         ease: "easeInOut",
@@ -88,6 +90,8 @@ const Services = () => {
                 <motion.div
                     className="flex flex-col md:w-[39rem] lg:w-auto lg:gap-2 gap-4 lg:ml-[80px]"
                     variants={childVariant2}
+                    initial="hidden"
+                    whileInView="visible"
                     viewport={{ once: true }}
                     transition={{
                         duration: 0.6,
