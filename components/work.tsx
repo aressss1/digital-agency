@@ -87,36 +87,40 @@ const Work = () => {
                 </div>
             </motion.div>
 
-            <motion.div
+            <div
                 className="grid lg:grid-cols-4 md:grid-cols-2 custom-grid-cols overflow-x-auto no-scrollbar gap-4"
-                variants={childVariant}
-                viewport={{ once: true }}
-                initial="hidden"
-                whileInView="visible"
-                transition={{
-                    duration: 0.6,
-                    ease: "easeInOut",
-                    delay: 0.4
-                }}
             >
-                {projectsContent.map((project) => (
-                    <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
-                        <CardHeader className="lg:p-6 md:p-5 p-4" >
-                            <Image
-                                src={project.imgSrc}
-                                alt="image"
-                                className="lg:h-[72px] md:h-[45px] h-[38px] self-start"
-                            />
-                            <CardTitle className=" text-stone-50 md:text-2xl text-lg font-semibold" >
-                                {project.title}
-                            </CardTitle>
-                        </CardHeader>
-                        <CardDescription className=" text-stone-50 md:text-xl text-base font-normal lg:leading-9 md:leading-8 lg:px-6 md:px-5 px-4 lg:pb-6 md:pb-5 pb-4 " >
-                            {project.description}
-                        </CardDescription>
-                    </Card>
+                {projectsContent.map((project, index) => (
+                    <motion.div
+                        key={project.id}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.6,
+                            ease: "easeInOut",
+                            delay: 0.3 + index * 0.1
+                        }}
+                        variants={childVariant}
+                    >
+                        <Card  className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
+                            <CardHeader className="lg:p-6 md:p-5 p-4" >
+                                <Image
+                                    src={project.imgSrc}
+                                    alt="image"
+                                    className="lg:h-[72px] md:h-[45px] h-[38px] self-start"
+                                />
+                                <CardTitle className=" text-stone-50 md:text-2xl text-lg font-semibold" >
+                                    {project.title}
+                                </CardTitle>
+                            </CardHeader>
+                            <CardDescription className=" text-stone-50 md:text-xl text-base font-normal lg:leading-9 md:leading-8 lg:px-6 md:px-5 px-4 lg:pb-6 md:pb-5 pb-4 " >
+                                {project.description}
+                            </CardDescription>
+                        </Card>
+                    </motion.div>
                 ))}
-            </motion.div>
+            </div>
         </div>
     );
 }
