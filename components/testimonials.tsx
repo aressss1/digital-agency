@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 import Autoplay from "embla-carousel-autoplay"
 import { Quote } from 'lucide-react';
+import { motion } from "framer-motion";
 
 const Testimonails = () => {
     const testimonialsContent = [
@@ -37,9 +38,24 @@ const Testimonails = () => {
         },
     ]
 
+    const varaiant = {
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 200 },
+    }
+
     return (
         <div className="bg-dark_blue" >
-            <div className="lg:px-28 md:px-14 px-4 lg:py-16 py-14" >
+            <motion.div 
+                className="lg:px-28 md:px-14 px-4 lg:py-16 py-14"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeIn"
+                }}
+                variants={varaiant}
+                >
                 <Carousel
                     // plugins={[
                     //     Autoplay({
@@ -85,7 +101,7 @@ const Testimonails = () => {
                     <CarouselNext className="bg-amber text-white border-0 " />
                     <CarouselPrevious className="bg-orange text-white border-0 " />
                 </Carousel>
-            </div>
+            </motion.div>
         </div>
     );
 }
