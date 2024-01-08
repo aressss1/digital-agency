@@ -18,7 +18,7 @@ const Footer = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 transition={{
-                    duration: 0.3,
+                    duration: 0.6,
                     ease: "easeIn"
                 }}
                 variants={varaiant}
