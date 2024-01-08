@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 
 const About = () => {
     const parentVaraiant = {
-        visible: { opacity: 1, y: -50 },
-        hidden: { opacity: 0, y: 0 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: -100},
     }
 
     const childVariant = {
@@ -23,7 +23,10 @@ const About = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+            transition={{ 
+                duration: 0.6, 
+                ease: "easeInOut"
+            }}
             variants={parentVaraiant}
         >
             <div 
