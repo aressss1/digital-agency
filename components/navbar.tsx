@@ -26,28 +26,50 @@ const Navbar = () => {
     ]
 
     return (
-        <motion.div
-         className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between"
-         initial={{opacity: 0}}
-         animate={{ opacity: 1 }}
-         transition={{ 
-                duration: .7,
-                ease: "easeInOut" 
-            }}
-         >
-            <Image
-                src="logo-1.svg"
-                alt="logo"
-                className="text-orange"
-            />
+        <div
+            className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between"
+        >
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                    duration: 0.3,
+                    ease: "easeInOut"
+                }}
+            >
+                <Image
+                    src="logo-1.svg"
+                    alt="logo"
+                    className="text-orange"
+                />
+            </motion.div>
             <div className="hidden lg:flex gap-5  items-center " >
-                {navLinks.map((nav) => (
-                    <div key={nav.label} className="text-gray-900 text-base  font-normal ease-in-out duration-[0.3s]  " >
+                {navLinks.map((nav, index) => (
+                    <motion.div
+                        key={nav.label}
+                        className="text-gray-900 text-base  font-normal ease-in-out duration-[0.3s]  "
+                        initial={{ opacity: 0, y: -25 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.3,
+                            ease: "easeInOut",
+                            delay: 0.3 + index * 0.1
+                        }}
+                    >
                         {nav.label}
-                    </div>
+                    </motion.div>
                 ))}
             </div>
-            <div className="flex md:gap-4 ease-in-out duration-[0.3s] " >
+            <motion.div
+                className="flex md:gap-4 ease-in-out duration-[0.3s]"
+                initial={{ opacity: 0, y: -25 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    duration: 0.3,
+                    ease: "easeInOut",
+                    delay: 0.6,
+                }}
+            >
                 <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
                     <p className="lg:mr-9 mr-5" >
                         Contact Us
@@ -58,7 +80,7 @@ const Navbar = () => {
                 <Button className="lg:hidden flex h-10 items-center justify-center bg-stone-50 hover:bg-stone-50 hover:text-orange text-black  " >
                     <Menu />
                 </Button>
-            </div>
+            </motion.div>
 
             {/* Responsive Navbar / Hamburger Menu */}
             {/* <Sheet >
@@ -92,7 +114,7 @@ const Navbar = () => {
                 </SheetContent>
             </Sheet> */}
 
-        </motion.div>
+        </div>
     );
 }
 
