@@ -89,6 +89,7 @@ const Work = () => {
 
             <motion.div
                 className="grid lg:grid-cols-4 md:grid-cols-2 custom-grid-cols overflow-x-auto no-scrollbar gap-4"
+                variants={childVariant}
                 viewport={{ once: true }}
                 initial="hidden"
                 whileInView="visible"
