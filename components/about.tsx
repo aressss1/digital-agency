@@ -13,7 +13,7 @@ const About = () => {
             //   },
         
         },
-        hidden: { opacity: 0, y: -100},
+        hidden: { opacity: 0, y: 200},
     }
 
     const childVariant = {
