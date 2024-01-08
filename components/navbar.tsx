@@ -32,7 +32,6 @@ const Navbar = () => {
          animate={{ opacity: 1 }}
          transition={{ 
                 duration: .7,
-                // delay: .3,
                 ease: "easeInOut" 
             }}
          >
@@ -41,14 +40,14 @@ const Navbar = () => {
                 alt="logo"
                 className="text-orange"
             />
-            <div className="hidden lg:flex gap-5  items-center  " >
+            <div className="hidden lg:flex gap-5  items-center " >
                 {navLinks.map((nav) => (
-                    <div key={nav.label} className="text-gray-900 text-base  font-normal" >
+                    <div key={nav.label} className="text-gray-900 text-base  font-normal ease-in-out duration-[0.3s]  " >
                         {nav.label}
                     </div>
                 ))}
             </div>
-            <div className="flex md:gap-4" >
+            <div className="flex md:gap-4 ease-in-out duration-[0.3s] " >
                 <Button className="bg-orange flex flex-col rounded-3xl text-stone-50 text-base font-medium " >
                     <p className="lg:mr-9 mr-5" >
                         Contact Us
