@@ -1,10 +1,35 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
+import { motion } from "framer-motion";
 
 const About = () => {
+    const parentVaraiant = {
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+    }
+
+    const childVariant = {
+        visible: { opacity: 1, y: -50 },
+        hidden: { opacity: 0, y: 0 },
+        transition: {
+            when: "beforeChildren",
+            staggerChildren: 0.3,
+          },
+    }
+
     return (
-        <div className="lg:px-20 md:px-14 px-4 py-5 bg-stone-50  " >
-            <div className="bg-dark_blue flex flex-col gap-5 lg:px-12 md:px-8 px-4 rounded-2xl lg:py-12 md:py-8 py-4 " >
+        <motion.div
+            className="lg:px-20 md:px-14 px-4 py-5 bg-stone-50"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            variants={parentVaraiant}
+        >
+            <div 
+                className="bg-dark_blue flex flex-col gap-5 lg:px-12 md:px-8 px-4 rounded-2xl lg:py-12 md:py-8 py-4 "
+                // variants={childVariant}
+                >
                 <div className="text-stone-50 lg:text-lg md:text-base text-sm font-light ">
                     01 / About
                 </div>
@@ -21,7 +46,7 @@ const About = () => {
                     </Button>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
