@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
     const heroContent = [
@@ -26,16 +27,34 @@ const HeroSection = () => {
     return (
         <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
 
-            <div className="flex flex-col gap-5" >
+            <motion.div
+                className="flex flex-col gap-5"
+                initial={{ opacity: 0, x: -200 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 0.3,
+                    ease: "easeInOut",
+                    delay: 0.75
+                }}
+            >
                 <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl text-3xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
                 </div>
                 <div className="lg:w-[55rem] md:w-[35rem] w-[14rem] text-gray-900 lg:text-2xl md:text-xl text-base md:font-light font-normal md:leading-9 leading-[1.75rem] ">
                     Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
                 </div>
-            </div>
+            </motion.div>
 
-            <div className="flex gap-4 pt-12 flex-wrap " >
+            <motion.div 
+                className="flex gap-4 pt-12 flex-wrap"
+                initial={{opacity: 0 , y: 200 }}
+                animate={{ opacity:1 , y:0 }}
+                transition={{
+                    duration: 0.3,
+                    ease: "easeInOut",
+                    delay: 1.05,
+                }}
+            >
 
                 <div className="bg-orange md:rounded-[2.5rem] rounded-[1.5rem] w-[29rem] h-[9rem] grid grid-cols-2 md:px-12 px-8 gap-5 py-3 grow" >
                     {heroContent.map((content) => (
@@ -84,7 +103,7 @@ const HeroSection = () => {
                         className="md:rounded-tl-[2.5rem] rounded-tl-[1.5rem] h-[105px] md:h-auto "
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 }
