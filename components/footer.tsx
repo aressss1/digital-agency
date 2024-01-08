@@ -2,11 +2,27 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+    const varaiant = {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: 100 },
+    }
+    
     return (
         <div className=" bg-dark_blue" >
-            <div className=" lg:px-20 md:px-14 px-4 lg:py-16 py-10 " >
+            <motion.div 
+                className=" lg:px-20 md:px-14 px-4 lg:py-16 py-10 " 
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.6,
+                    ease: "easeIn"
+                }}
+                variants={varaiant}
+            >
                 <div className="bg-orange lg:p-20 md:p-12 p-8 flex flex-col justify-between gap-9 rounded-[2rem] " >
 
                     <div className="flex justify-between md:flex-row flex-col md:gap-0 gap-5" >
@@ -38,7 +54,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-            </div>
+            </motion.div>
 
             <div className="py-6 flex md:flex-row flex-col gap-2 md:gap-0" >
                 <div className="text-stone-50 lg:text-xl md:text-base text-sm font-extralight flex  items-center justify-center ">
