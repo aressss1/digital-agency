@@ -31,11 +31,18 @@ const Services = () => {
     ]
 
     const parentVaraiant = {
-        visible: {
-            opacity: 1,
-            y: 0,
-        },
+        visible: {opacity: 1, y: 0},
         hidden: { opacity: 0, y: 200 },
+    }
+
+    const childVariant1 = {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -200 },   
+    }
+
+    const childVariant2 = {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -200 },   
     }
 
     return (
@@ -63,8 +70,8 @@ const Services = () => {
 
             <div className="flex lg:flex-row flex-col gap-10  justify-between" >
                 <motion.div
-                    initial={{ opacity: 0, x: -200 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    variants={childVariant1}
+                    viewport={{ once: true }}
                     transition={{
                         duration: 0.6,
                         ease: "easeInOut",
@@ -80,8 +87,8 @@ const Services = () => {
 
                 <motion.div
                     className="flex flex-col md:w-[39rem] lg:w-auto lg:gap-2 gap-4 lg:ml-[80px]"
-                    initial={{ opacity: 0, x: 300 }}
-                    animate={{ opacity: 1, x: 0 }}
+                    variants={childVariant2}
+                    viewport={{ once: true }}
                     transition={{
                         duration: 0.6,
                         ease: "easeInOut",
