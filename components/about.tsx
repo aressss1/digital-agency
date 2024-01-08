@@ -4,7 +4,15 @@ import { motion } from "framer-motion";
 
 const About = () => {
     const parentVaraiant = {
-        visible: { opacity: 1, y: 0 },
+        visible: { 
+            opacity: 1, 
+            y: 0,
+            // transition: {
+            //     when: "beforeChildren",
+            //     staggerChildren: 0.3,
+            //   },
+        
+        },
         hidden: { opacity: 0, y: -100},
     }
 
@@ -19,7 +27,7 @@ const About = () => {
 
     return (
         <motion.div
-            className="lg:px-20 md:px-14 px-4 py-5 bg-stone-50"
+            className="lg:px-24 md:px-14 px-4 py-5 bg-stone-50"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}

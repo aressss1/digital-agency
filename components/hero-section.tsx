@@ -25,10 +25,10 @@ const HeroSection = () => {
 
 
     return (
-        <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 " >
+        <div className="flex flex-col lg:px-20 md:px-14 px-4 py-5 bg-stone-50 gap-6 " >
 
             <motion.div
-                className="flex flex-col gap-5"
+                className="flex flex-col md:gap-7 gap-5"
                 initial={{ opacity: 0, x: -200 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{
