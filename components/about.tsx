@@ -27,7 +27,7 @@ const About = () => {
 
     return (
         <motion.div
-            className="lg:px-24 md:px-14 px-4 py-5 bg-stone-50"
+            className="lg:px-20 md:px-14 px-4 py-12 bg-stone-50"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
