@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
     const varaiant = {
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: 300 },
+        hidden: { opacity: 0, x: 500 },
     }
     
     return (
@@ -18,7 +18,7 @@ const Footer = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 transition={{
-                    duration: 0.6,
+                    duration: 0.3,
                     ease: "easeIn"
                 }}
                 variants={varaiant}
