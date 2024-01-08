@@ -74,7 +74,7 @@ const Services = () => {
                     <Image
                         src="services_banner.png"
                         alt="services_banner"
-                        className="lg:h-auto lg:w-auto md:h-[27rem] md:w-[24rem] w-[18rem] h-[22rem] "
+                        className="lg:h-auto lg:w-[29rem] md:h-[27rem] md:w-[24rem] w-[18rem] h-[22rem] "
                     />
                 </div>
 
