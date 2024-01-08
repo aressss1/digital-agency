@@ -42,16 +42,16 @@ const Services = () => {
         <div
             className="flex flex-col md:gap-8 gap-4  lg:px-20 md:px-14 px-4 lg:py-16 py-10 bg-stone-50 "
         >
-            <div
+            <motion.div
              className="flex flex-col md:gap-6 gap-4" 
-            //  initial="hidden"
-            //  whileInView="visible"
-            //  viewport={{ once: true }}
-            //  transition={{
-            //      duration: 0.6,
-            //      ease: "easeInOut"
-            //  }}
-            //  variants={parentVaraiant} 
+             initial="hidden"
+             whileInView="visible"
+             viewport={{ once: true }}
+             transition={{
+                 duration: 0.6,
+                 ease: "easeInOut"
+             }}
+             variants={parentVaraiant} 
             >
                 <div className="text-dark_blue lg:text-lg md:text-base text-sm font-normal ">
                     02 / Services
@@ -59,34 +59,34 @@ const Services = () => {
                 <div className="lg:w-[56rem] md:w-[40rem] text-dark_blue lg:text-7xl md:text-5xl text-3xl  md:font-medium font-semibold lg:leading-[5rem] md:leading-[3.5rem] leading-[2.5rem] ">
                     We offer several services for you
                 </div>
-            </div>
+            </motion.div>
 
             <div className="flex lg:flex-row flex-col gap-10  justify-between" >
-                <div
-                    // initial={{ opacity: 0, x: -200 }}
-                    // animate={{ opacity: 1, x: 0 }}
-                    // transition={{
-                    //     duration: 0.6,
-                    //     ease: "easeInOut",
-                    //     delay: 0.4
-                    // }}
+                <motion.div
+                    initial={{ opacity: 0, x: -200 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut",
+                        delay: 0.4
+                    }}
                 >
                     <Image
                         src="services_banner.png"
                         alt="services_banner"
                         className="lg:h-auto lg:w-[46rem] md:h-[27rem] md:w-[24rem] w-[18rem] h-[22rem] "
                     />
-                </div>
+                </motion.div>
 
-                <div
+                <motion.div
                     className="flex flex-col md:w-[39rem] lg:w-auto lg:gap-2 gap-4 lg:ml-[80px]"
-                    // initial={{ opacity: 0, x: 300 }}
-                    // animate={{ opacity: 1, x: 0 }}
-                    // transition={{
-                    //     duration: 0.6,
-                    //     ease: "easeInOut",
-                    //     delay: 0.4
-                    // }}
+                    initial={{ opacity: 0, x: 300 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeInOut",
+                        delay: 0.4
+                    }}
                 >
                     {servicesContent.map((service) => (
                         <div key={service.number} className="group  flex items-baseline gap-5  font-semibold " >
@@ -103,7 +103,7 @@ const Services = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </div>
     );
