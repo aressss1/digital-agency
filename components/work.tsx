@@ -97,7 +97,7 @@ const Work = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                         transition={{
-                            duration: 0.5,
+                            duration: 0.8,
                             ease: "easeInOut",
                             delay: 0.2 + index * 0.1
                         }}
