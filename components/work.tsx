@@ -97,9 +97,9 @@ const Work = () => {
                         whileInView="visible"
                         viewport={{ once: true }}
                         transition={{
-                            duration: 0.8,
+                            duration: 0.3,
                             ease: "easeInOut",
-                            delay: 0.2 + index * 0.1
+                            delay: 0.3 + index * 0.1
                         }}
                         variants={childVariant}
                     >
