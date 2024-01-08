@@ -3,6 +3,8 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { Sheet, SheetContent, SheetDescription, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
+import { motion } from "framer-motion";
+
 
 const Navbar = () => {
     const navLinks = [
@@ -24,7 +26,16 @@ const Navbar = () => {
     ]
 
     return (
-        <div className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between" >
+        <motion.div
+         className="flex bg-stone-50 lg:px-20 md:px-14 px-4 py-6 justify-between"
+         initial={{opacity: 0}}
+         animate={{ opacity: 1 }}
+         transition={{ 
+                duration: .7,
+                // delay: .3,
+                ease: "easeInOut" 
+            }}
+         >
             <Image
                 src="logo-1.svg"
                 alt="logo"
@@ -82,7 +93,7 @@ const Navbar = () => {
                 </SheetContent>
             </Sheet> */}
 
-        </div>
+        </motion.div>
     );
 }
 
