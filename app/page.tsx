@@ -10,7 +10,7 @@ import Work from "@/components/work";
 
 export default function Home() {
   return (
-    <>
+    <div className="h-full w-full" >
       <Navbar />
       <HeroSection />
       <About />
@@ -18,6 +18,6 @@ export default function Home() {
       <Work />
       <Testimonails />
       <Footer />
-    </>
+    </div>
   )
 }
