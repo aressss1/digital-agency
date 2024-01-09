@@ -19,6 +19,11 @@ const Footer = () => {
         hidden: { opacity: 0, x: -300 },
     }
 
+    const varaiant3 = {
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -300 },
+    }
+
     return (
         <div className=" bg-dark_blue" >
             <motion.div
@@ -42,7 +47,7 @@ const Footer = () => {
                         transition={{
                             duration: 0.6,
                             ease: "easeIn",
-                            delay: 0.4
+                            delay: 0.2
                         }}
                         variants={varaiant1}
                     >
@@ -65,7 +70,7 @@ const Footer = () => {
                         transition={{
                             duration: 0.6,
                             ease: "easeIn",
-                            delay: 0.8
+                            delay: 0.4
                         }}
                         variants={varaiant2}
                     >
@@ -96,7 +101,7 @@ const Footer = () => {
                     duration: 0.6,
                     ease: "easeIn"
                 }}
-                variants={varaiant}
+                variants={varaiant3}
             >
                 <div className="text-stone-50 lg:text-xl md:text-base text-sm font-extralight flex  items-center justify-center ">
                     Designed by
