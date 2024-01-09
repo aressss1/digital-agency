@@ -41,7 +41,7 @@ const HeroSection = () => {
                     Powerful Digital <br /> Branding Agency
                 </div>
                 <div className="lg:w-[55rem] md:w-[35rem] w-[14rem] text-gray-900 lg:text-2xl md:text-xl text-base md:font-light font-normal md:leading-9 leading-[1.75rem] ">
-                    Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
+                 We craft compelling narratives and design immersive experiences that resonate with your audience.
                 </div>
             </motion.div>
 

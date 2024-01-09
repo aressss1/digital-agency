@@ -6,27 +6,27 @@ const Services = () => {
         {
             number: "01",
             serviceName: "Advertising",
-            serviceDescription: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            serviceDescription: "Drive impactful campaigns that captivate audiences and inspire action, maximizing your brand's visibility and results."
         },
         {
             number: "02",
             serviceName: "Research",
-            serviceDescription: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            serviceDescription: "Uncover data-driven insights that empower strategic decisions, delving deep into market trends and audience behavior."
         },
         {
             number: "03",
             serviceName: "Social Media Marketing",
-            serviceDescription: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            serviceDescription: "Amplify your brand's voice, fostering engagement and meaningful connections across diverse platforms."
         },
         {
             number: "04",
             serviceName: "Search Engine Optimization",
-            serviceDescription: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            serviceDescription: "Propel your online presence with optimized strategies, climbing search ranks and attracting organic traffic."
         },
         {
             number: "05",
             serviceName: "Web Design",
-            serviceDescription: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            serviceDescription: "Create immersive digital experiences that captivate users and drive conversions with visually stunning, user-centric designs."
         },
     ]
 
