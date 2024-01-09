@@ -54,8 +54,8 @@ const Work = () => {
     }
 
     const childVariant = {
-        visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: 400 },
+        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0, y: 300 },
     }
 
     return (
@@ -87,23 +87,20 @@ const Work = () => {
                 </div>
             </motion.div>
 
-            <div
+            <motion.div
                 className="grid lg:grid-cols-4 md:grid-cols-2 custom-grid-cols overflow-x-auto no-scrollbar gap-4"
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{
+                    duration: 0.3,
+                    ease: "easeInOut",
+                    delay: 0.4
+                }}
+                variants={childVariant}
             >
-                {projectsContent.map((project, index) => (
-                    <motion.div
-                        key={project.id}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: true }}
-                        transition={{
-                            duration: 0.3,
-                            ease: "easeInOut",
-                            delay: 0.3 + index * 0.1
-                        }}
-                        variants={childVariant}
-                    >
-                        <Card  className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
+                {projectsContent.map((project) => (
+                        <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
                             <CardHeader className="lg:p-6 md:p-5 p-4" >
                                 <Image
                                     src={project.imgSrc}
@@ -118,9 +115,8 @@ const Work = () => {
                                 {project.description}
                             </CardDescription>
                         </Card>
-                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 }
