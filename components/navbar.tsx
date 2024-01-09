@@ -4,6 +4,7 @@ import { Separator } from "./ui/separator";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 
 const Navbar = () => {
@@ -57,7 +58,7 @@ const Navbar = () => {
                             delay: 0.3 + index * 0.1
                         }}
                     >
-                        <Link   
+                        <Link
                             to={nav.link}
                             spy={true}
                             smooth={true}
@@ -86,9 +87,33 @@ const Navbar = () => {
                     <Separator className="pt-[2px]" />
                 </Button>
 
-                <Button className="lg:hidden flex h-10 items-center justify-center bg-stone-50 hover:bg-stone-50 hover:text-orange text-black  " >
-                    <Menu />
-                </Button>
+                <Sheet >
+                    <SheetTrigger asChild>
+                        <Button className="lg:hidden flex h-10 items-center justify-center bg-stone-50 hover:bg-stone-50 hover:text-orange text-black  " >
+                            <Menu />
+                        </Button>
+                    </SheetTrigger>
+                    <SheetContent className="flex flex-col gap-4 justify-center items-center">
+                        {navLinks.map((nav) => (
+                            <div
+                                key={nav.label}
+                                className="text-gray-900 text-base  font-normal cursor-pointer hover:text-orange "
+                            >
+                                <Link
+                                    to={nav.link}
+                                    spy={true}
+                                    smooth={true}
+                                    duration={500}
+                                    offset={-50}
+                                >
+                                    {nav.label}
+                                </Link>
+                            </div>
+                        ))}
+
+                    </SheetContent>
+                </Sheet>
+
             </motion.div>
 
         </div>
