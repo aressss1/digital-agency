@@ -76,11 +76,11 @@ const Footer = () => {
                                 className="h-9"
                             />
                             <div className="text-stone-50 md:text-2xl text-lg font-medium" >
-                                Branding Agency
+                                Digital Agency
                             </div>
                         </div>
                         <div className=" text-stone-50 lg:text-2xl md:text-xl text-base font-light lg:w-[40rem] md:w-[27rem] ">
-                            Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit.
+                            At Powerful Digital Agency, our passion lies in redefining norms and elevating brands beyond the ordinary. With a commitment to innovative thinking, we craft solutions that transcend expectations, pushing the boundaries of digital excellence. 
                         </div>
                     </motion.div>
 

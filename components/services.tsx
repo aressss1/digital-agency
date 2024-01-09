@@ -88,7 +88,7 @@ const Services = () => {
                 </motion.div>
 
                 <motion.div
-                    className="flex flex-col md:w-[39rem] lg:w-auto lg:gap-2 gap-4 lg:ml-[80px]"
+                    className="flex flex-col md:w-[39rem] lg:w-auto  gap-4 lg:ml-[80px]"
                     variants={childVariant2}
                     initial="hidden"
                     whileInView="visible"
