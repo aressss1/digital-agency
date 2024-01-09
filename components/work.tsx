@@ -49,8 +49,8 @@ const Work = () => {
     };
 
     const variant1 = {
-        visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 200 },
+        visible: { opacity: 1, x: 0 },
+        hidden: { opacity: 0, x: -200 },
     }
 
     const variant2 = {
@@ -98,7 +98,6 @@ const Work = () => {
                         transition={{
                             duration: 0.6,
                             ease: "easeInOut",
-                            delay: 0.2
                         }}
                         variants={variant2}
                     >
@@ -112,7 +111,6 @@ const Work = () => {
                         transition={{
                             duration: 0.6,
                             ease: "easeInOut",
-                            delay: 0.2
                         }}
                         variants={variant3}
                     >
@@ -132,7 +130,7 @@ const Work = () => {
                 transition={{
                     duration: 0.3,
                     ease: "easeInOut",
-                    delay: 0.4
+                    delay: 0.2
                 }}
                 variants={variant4}
             >

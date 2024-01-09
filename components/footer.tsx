@@ -19,11 +19,6 @@ const Footer = () => {
         hidden: { opacity: 0, x: -300 },
     }
 
-    const varaiant3 = {
-        visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -300 },
-    }
-
     return (
         <div className=" bg-dark_blue" >
             <motion.div
@@ -92,16 +87,8 @@ const Footer = () => {
                 </div>
             </motion.div>
 
-            <motion.div 
+            <div 
                 className="py-6 flex md:flex-row flex-col gap-2 md:gap-0 items-center justify-center" 
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{
-                    duration: 0.6,
-                    ease: "easeIn"
-                }}
-                variants={varaiant3}
             >
                 <div className="text-stone-50 lg:text-xl md:text-base text-sm font-extralight flex  items-center justify-center ">
                     Designed by
@@ -115,7 +102,7 @@ const Footer = () => {
                         Faizan Asghar
                     </Button>
                 </div>
-            </motion.div>
+            </div>
         </div>
     );
 }
