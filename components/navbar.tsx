@@ -95,10 +95,12 @@ const Navbar = () => {
                     </SheetTrigger>
                     <SheetContent className=" w-[225px] md:w-auto bg-stone-50 pt-28 flex flex-col gap-12 justify-start items-baseline">
                         {navLinks.map((nav) => (
-                                <div
-                                    key={nav.label}
-                                    className="text-dark_blue hover:text-orange text-base  font-normal cursor-pointer"
-                                >
+                            <div
+                                key={nav.label}
+                                className="text-dark_blue hover:text-orange text-base  font-normal cursor-pointer"
+                            >
+                                <SheetClose asChild>
+
                                     <Link
                                         to={nav.link}
                                         spy={true}
@@ -108,7 +110,9 @@ const Navbar = () => {
                                     >
                                         {nav.label}
                                     </Link>
-                                </div>
+
+                                </SheetClose>
+                            </div>
                         ))}
 
                     </SheetContent>
