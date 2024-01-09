@@ -17,7 +17,6 @@ const About = () => {
 
             <motion.div
                 className="lg:px-20 md:px-14 px-4 py-12 bg-stone-50"
-                id="about"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

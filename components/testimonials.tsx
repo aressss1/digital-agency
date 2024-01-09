@@ -46,7 +46,7 @@ const Testimonails = () => {
 
     return (
         <Element name="clients">
-            <div className="bg-dark_blue" id="clients">
+            <div className="bg-dark_blue" >
                 <motion.div
                     className="lg:px-28 md:px-14 px-4 lg:py-16 py-14"
                     initial="hidden"
