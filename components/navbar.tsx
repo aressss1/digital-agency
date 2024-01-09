@@ -94,8 +94,6 @@ const Navbar = () => {
                         </Button>
                     </SheetTrigger>
                     <SheetContent className=" w-[225px] md:w-auto bg-stone-50 pt-28 flex flex-col gap-12 justify-start items-baseline">
-                        
-                    <SheetClose  asChild>
                         {navLinks.map((nav) => (
                                 <div
                                     key={nav.label}
@@ -112,7 +110,6 @@ const Navbar = () => {
                                     </Link>
                                 </div>
                         ))}
-                        </SheetClose>
 
                     </SheetContent>
                 </Sheet>
