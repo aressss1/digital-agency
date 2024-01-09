@@ -34,7 +34,7 @@ const About = () => {
                 </div>
                 <div className="flex md:flex-row flex-col gap-2 md:gap-0 justify-between" >
                     <div className="lg:w-[46rem] md:w-[25rem] text-stone-50 lg:text-xl md:text-sm text-sm font-normal lg:leading-10 leading-6  ">
-                    We're the embodiment of exceptional service and unconventional creativity. At Powerful Digital Branding Agency, our passion lies in redefining norms and elevating brands beyond the ordinary. With a commitment to innovative thinking, we craft solutions that transcend expectations, pushing the boundaries of digital excellence. 
+                    We&apos;re the embodiment of exceptional service and unconventional creativity. At Powerful Digital Branding Agency, our passion lies in redefining norms and elevating brands beyond the ordinary. With a commitment to innovative thinking, we craft solutions that transcend expectations, pushing the boundaries of digital excellence. 
                     </div>
                     <Button className="bg-amber hover:bg-stone-50 text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center self-end" >
                         Know More
