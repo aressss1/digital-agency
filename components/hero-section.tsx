@@ -40,7 +40,7 @@ const HeroSection = () => {
                 <div className="justify-start text-gray-900 lg:text-8xl md:text-6xl text-3xl font-medium lg:leading-[7.5rem] ">
                     Powerful Digital <br /> Branding Agency
                 </div>
-                <div className="lg:w-[55rem] md:w-[35rem] w-[14rem] text-gray-900 lg:text-2xl md:text-xl text-base md:font-light font-normal md:leading-9 leading-[1.75rem] ">
+                <div className="lg:w-[55rem] md:w-[35rem] w-[18rem] text-gray-900 lg:text-2xl md:text-xl text-base md:font-light font-normal md:leading-9 leading-[1.75rem] ">
                     We craft compelling narratives and design immersive experiences that resonate with your audience.
                 </div>
             </motion.div>

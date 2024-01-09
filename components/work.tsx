@@ -138,12 +138,12 @@ const Work = () => {
                     variants={variant4}
                 >
                     {projectsContent.map((project) => (
-                        <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} `} >
+                        <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} hover:scale-110 `} >
                             <CardHeader className="lg:p-6 md:p-5 p-4" >
                                 <Image
                                     src={project.imgSrc}
                                     alt="image"
-                                    className="lg:h-[72px] md:h-[45px] h-[38px] self-start"
+                                    className="lg:h-[54px] md:h-[45px] h-[38px] self-start"
                                 />
                                 <CardTitle className=" text-stone-50 md:text-2xl text-lg font-semibold" >
                                     {project.title}
