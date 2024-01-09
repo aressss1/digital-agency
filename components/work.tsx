@@ -10,27 +10,27 @@ const Work = () => {
     const projectsContent = [
         {
             id: 1,
-            imgSrc: "/work/calendar.svg",
-            title: "Sed pellent",
-            description: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            imgSrc: "/project/project-1.svg",
+            title: "Project HighUp",
+            description: "Engaged in a comprehensive branding overhaul, amplifying HighUp's online presence through targeted social media campaigns, refreshed web design, and SEO optimization, resulting in a 40% increase in web traffic within three months."
         },
         {
             id: 2,
-            imgSrc: "/work/dashboard.svg",
-            title: "Auctor nulla",
-            description: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            imgSrc: "/project/project-2.svg",
+            title: "Skyline Solutions",
+            description: "Collaborated with Skyline Solutions to revitalize their advertising strategy, crafting visually compelling ad campaigns across multiple platforms, yielding a 50% rise in click-through rates and a notable boost in brand recognition."
         },
         {
             id: 3,
-            imgSrc: "/work/Loading.svg",
-            title: "Elit arcu",
-            description: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            imgSrc: "/project/project-3.svg",
+            title: "TechWave Innovations",
+            description: "Partnered with TechWave Innovations to create an immersive digital experience through user-centric web design, leading to a 60% increase in user engagement and a 35% rise in conversion rates."
         },
         {
             id: 4,
-            imgSrc: "/work/emoji.svg",
-            title: "Ptesque inter",
-            description: "Eu scelerisque amet amet malesuada id ultrices morbi. Vitae purus mauris hac nisi habitasse donec. Vitae integer massa in blandit."
+            imgSrc: "/project/project-4.svg",
+            title: "Nature's Bounty Co.",
+            description: "Assisted Nature's Bounty Co. in market research and analysis, guiding their expansion strategy into new demographics, resulting in a 30% growth in market share within the targeted regions."
         },
     ]
 

@@ -1,15 +1,18 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Router } from "lucide-react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+    const router = useRouter()
+    
     const varaiant = {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 50 },
     }
-    
+
     return (
         <div className=" bg-dark_blue" >
             <motion.div
@@ -65,13 +68,13 @@ const Footer = () => {
             >
                 <div className="text-stone-50 lg:text-xl md:text-base text-sm font-extralight flex  items-center justify-center ">
                     Designed by
-                    <Button variant="link" className="text-stone-50 lg:text-xl md:text-base text-sm font-normal px-2">
+                    <Button variant="link" className="text-stone-50 lg:text-xl md:text-base text-sm font-normal px-2" onClick={() => router.push("https://www.linkedin.com/in/sakila-sb1129/")} >
                         Sakila Pokharel
                     </Button>
                 </div>
                 <div className="text-stone-50 lg:text-xl md:text-base text-sm font-extralight flex  items-center justify-center" >
                     Developed by
-                    <Button variant="link" className="text-stone-50 lg:text-xl md:text-base text-sm font-normal px-2">
+                    <Button variant="link" className="text-stone-50 lg:text-xl md:text-base text-sm font-normal px-2" onClick={() => router.push("https://www.linkedin.com/in/faizan-asghar-806794280/")} >
                         Faizan Asghar
                     </Button>
                 </div>
