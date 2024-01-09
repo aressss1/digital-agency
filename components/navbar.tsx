@@ -4,21 +4,26 @@ import { Separator } from "./ui/separator";
 import { Sheet, SheetContent, SheetDescription, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 
 const Navbar = () => {
     const navLinks = [
         {
             label: 'About Us',
+            link: "/#about"
         },
         {
             label: 'Our Services',
+            link: "/#services"
         },
         {
-            label: 'Our Works',
+            label: 'Our Work',
+            link: "/#work"
         },
         {
             label: 'Our Clients',
+            link: "/#clients"
         },
     ]
 
@@ -53,7 +58,9 @@ const Navbar = () => {
                             delay: 0.3 + index * 0.1
                         }}
                     >
+                        <Link href={nav.link} >
                         {nav.label}
+                        </Link>
                     </motion.div>
                 ))}
             </div>

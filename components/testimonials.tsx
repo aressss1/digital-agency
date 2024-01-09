@@ -44,7 +44,7 @@ const Testimonails = () => {
     }
 
     return (
-        <div className="bg-dark_blue" >
+        <div className="bg-dark_blue" id="clients">
             <motion.div 
                 className="lg:px-28 md:px-14 px-4 lg:py-16 py-14"
                 initial="hidden"
