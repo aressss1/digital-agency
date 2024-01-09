@@ -5,6 +5,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import Autoplay from "embla-carousel-autoplay"
 import { Quote } from 'lucide-react';
 import { motion } from "framer-motion";
+import { Element } from "react-scroll";
 
 const Testimonails = () => {
     const testimonialsContent = [
@@ -44,65 +45,68 @@ const Testimonails = () => {
     }
 
     return (
-        <div className="bg-dark_blue" id="clients">
-            <motion.div 
-                className="lg:px-28 md:px-14 px-4 lg:py-16 py-14"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{
-                    duration: 0.6,
-                    ease: "easeIn"
-                }}
-                variants={varaiant}
-                >
-                <Carousel
-                    // plugins={[
-                    //     Autoplay({
-                    //         delay: 3000,
-                    //       }),
-                    // ]}
-                    opts={{
-                        align: "start",
-                        loop: true,
+        <Element name="clients">
+            <div className="bg-dark_blue" id="clients">
+                <motion.div
+                    className="lg:px-28 md:px-14 px-4 lg:py-16 py-14"
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 0.6,
+                        ease: "easeIn"
                     }}
+                    variants={varaiant}
                 >
-                    <CarouselContent>
-                        {testimonialsContent.map((testimonial) => (
-                            <CarouselItem key={testimonial.id} >
-                                <div className="flex flex-col md:gap-12 gap-8 " >
+                    <Carousel
+                        // plugins={[
+                        //     Autoplay({
+                        //         delay: 3000,
+                        //       }),
+                        // ]}
+                        opts={{
+                            align: "start",
+                            loop: true,
+                        }}
+                    >
+                        <CarouselContent>
+                            {testimonialsContent.map((testimonial) => (
+                                <CarouselItem key={testimonial.id} >
+                                    <div className="flex flex-col md:gap-12 gap-8 " >
 
-                                    <div className="lg:w-[59rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
-                                        <Quote className="rotate-180 lg:h-12 lg:w-48 md:h-8 md:w-40 w-20 h-4 "  />
-                                        {testimonial.content}
-                                    </div>
+                                        <div className="lg:w-[59rem] md:w-[32rem] flex gap-4 text-stone-50 lg:text-6xl md:text-4xl text-2xl lg:leading-[4rem] md:leading-[3rem] font-medium relative" >
+                                            <Quote className="rotate-180 lg:h-12 lg:w-48 md:h-8 md:w-40 w-20 h-4 " />
+                                            {testimonial.content}
+                                        </div>
 
 
-                                    <div className="flex md:gap-8 gap-4 lg:pl-12 pl-8 items-center " >
-                                        <Image
-                                            src={testimonial.authorImg}
-                                            alt={testimonial.authorName}
-                                            className="lg:h-28 lg:w-28 md:w-20 md:h-20 w-16 h-16 rounded-full object-cover "
-                                        />
-                                        <div className="flex flex-col md:gap-3 justify-center" >
-                                            <div className=" text-stone-50 lg:text-4xl md:text-2xl text-lg font-medium" >
-                                                {testimonial.authorName}
-                                            </div>
-                                            <div className=" text-stone-50  self-baseline lg:text-2xl md:text-xl text-base lg:font-normal md:font-light" >
-                                                {testimonial.authorRole}
+                                        <div className="flex md:gap-8 gap-4 lg:pl-12 pl-8 items-center " >
+                                            <Image
+                                                src={testimonial.authorImg}
+                                                alt={testimonial.authorName}
+                                                className="lg:h-28 lg:w-28 md:w-20 md:h-20 w-16 h-16 rounded-full object-cover "
+                                            />
+                                            <div className="flex flex-col md:gap-3 justify-center" >
+                                                <div className=" text-stone-50 lg:text-4xl md:text-2xl text-lg font-medium" >
+                                                    {testimonial.authorName}
+                                                </div>
+                                                <div className=" text-stone-50  self-baseline lg:text-2xl md:text-xl text-base lg:font-normal md:font-light" >
+                                                    {testimonial.authorRole}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </CarouselItem>
-                        ))}
-                    </CarouselContent>
+                                </CarouselItem>
+                            ))}
+                        </CarouselContent>
 
-                    <CarouselNext className="bg-amber text-white border-0 " />
-                    <CarouselPrevious className="bg-orange text-white border-0 " />
-                </Carousel>
-            </motion.div>
-        </div>
+                        <CarouselNext className="bg-amber text-white border-0 " />
+                        <CarouselPrevious className="bg-orange text-white border-0 " />
+                    </Carousel>
+                </motion.div>
+
+            </div >
+        </Element>
     );
 }
 

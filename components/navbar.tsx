@@ -3,26 +3,26 @@ import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 
 const Navbar = () => {
     const navLinks = [
         {
             label: 'About Us',
-            link: "/#about"
+            link: "about"
         },
         {
             label: 'Our Services',
-            link: "/#services"
+            link: "services"
         },
         {
             label: 'Our Work',
-            link: "/#work"
+            link: "work"
         },
         {
             label: 'Our Clients',
-            link: "/#clients"
+            link: "clients"
         },
     ]
 
@@ -57,10 +57,14 @@ const Navbar = () => {
                             delay: 0.3 + index * 0.1
                         }}
                     >
-                        <Link href={nav.link} >
-                            <a>
-                        {nav.label}
-                            </a>
+                        <Link   
+                            to={nav.link}
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-50}
+                        >
+                            {nav.label}
                         </Link>
                     </motion.div>
                 ))}
