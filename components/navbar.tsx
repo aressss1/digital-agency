@@ -15,10 +15,10 @@ const Navbar = () => {
             label: 'Our Services',
         },
         {
-            label: 'Our Clients',
+            label: 'Our Works',
         },
         {
-            label: 'Our Works',
+            label: 'Our Clients',
         },
     ]
 
