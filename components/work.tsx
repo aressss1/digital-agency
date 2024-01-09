@@ -138,7 +138,7 @@ const Work = () => {
                     variants={variant4}
                 >
                     {projectsContent.map((project) => (
-                        <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} hover:scale-110 cursor-pointer `} >
+                        <Card key={project.id} className={` rounded-[2rem] ${getBgColorClass(project.id)} hover:scale-105 cursor-pointer `} >
                             <CardHeader className="lg:p-6 md:p-5 p-4" >
                                 <Image
                                     src={project.imgSrc}
