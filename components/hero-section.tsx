@@ -29,7 +29,7 @@ const HeroSection = () => {
 
             <motion.div
                 className="flex flex-col md:gap-7 gap-5"
-                initial={{ opacity: 0, x: -200 }}
+                initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{
                     duration: 0.3,
@@ -47,7 +47,7 @@ const HeroSection = () => {
 
             <motion.div 
                 className="flex gap-4 pt-12 flex-wrap"
-                initial={{opacity: 0 , y: 200 }}
+                initial={{opacity: 0 , y: 50 }}
                 animate={{ opacity:1 , y:0 }}
                 transition={{
                     duration: 0.3,

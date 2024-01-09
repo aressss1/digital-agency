@@ -33,17 +33,17 @@ const Services = () => {
 
     const parentVaraiant = {
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 200 },
+        hidden: { opacity: 0, y: 50 },
     }
 
     const childVariant1 = {
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -200 },
+        hidden: { opacity: 0, x: -50 },
     }
 
     const childVariant2 = {
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: 300 },
+        hidden: { opacity: 0, x: 50 },
     }
 
     return (

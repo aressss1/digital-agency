@@ -51,22 +51,22 @@ const Work = () => {
 
     const variant1 = {
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -200 },
+        hidden: { opacity: 0, x: -50 },
     }
 
     const variant2 = {
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: -200 },
+        hidden: { opacity: 0, x: -50 },
     }
 
     const variant3 = {
         visible: { opacity: 1, x: 0 },
-        hidden: { opacity: 0, x: 200 },
+        hidden: { opacity: 0, x: 50 },
     }
 
     const variant4 = {
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 300 },
+        hidden: { opacity: 0, y: 50 },
     }
 
     return (

@@ -48,7 +48,7 @@ const Navbar = () => {
                 {navLinks.map((nav, index) => (
                     <motion.div
                         key={nav.label}
-                        className="text-gray-900 text-base  font-normal ease-in-out duration-[0.3s]  "
+                        className="text-gray-900 text-base  font-normal cursor-pointer hover:text-orange  "
                         initial={{ opacity: 0, y: -25 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{
@@ -70,7 +70,7 @@ const Navbar = () => {
                 ))}
             </div>
             <motion.div
-                className="flex md:gap-4 ease-in-out duration-[0.3s]"
+                className="flex md:gap-4 "
                 initial={{ opacity: 0, y: -25 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
