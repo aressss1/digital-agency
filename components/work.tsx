@@ -12,25 +12,25 @@ const Work = () => {
             id: 1,
             imgSrc: "/project/project-1.svg",
             title: "Project HighUp",
-            description: "Engaged in a comprehensive branding overhaul, amplifying HighUp's online presence through targeted social media campaigns, refreshed web design, and SEO optimization, resulting in a 40% increase in web traffic within three months."
+            description: "Engaged in a comprehensive branding overhaul, refreshed web design, and SEO optimization, resulting in a 40% increase in web traffic within three months."
         },
         {
             id: 2,
             imgSrc: "/project/project-2.svg",
             title: "Skyline Solutions",
-            description: "Collaborated with Skyline Solutions to revitalize their advertising strategy, crafting visually compelling ad campaigns across multiple platforms, yielding a 50% rise in click-through rates and a notable boost in brand recognition."
+            description: "Collaborated with Skyline Solutions to revitalize their advertising strategy yielding a 50% rise in click-through rates and a notable boost in brand recognition."
         },
         {
             id: 3,
             imgSrc: "/project/project-3.svg",
             title: "TechWave Innovations",
-            description: "Partnered with TechWave Innovations to create an immersive digital experience through user-centric web design, leading to a 60% increase in user engagement and a 35% rise in conversion rates."
+            description: "Partnered with TechWave Innovations to create an immersive digital  leading to a 60% increase in user engagement and a 35% rise in conversion rates."
         },
         {
             id: 4,
             imgSrc: "/project/project-4.svg",
             title: "Nature's Bounty Co.",
-            description: "Assisted Nature's Bounty Co. in market research and analysis, guiding their expansion strategy into new demographics, resulting in a 30% growth in market share within the targeted regions."
+            description: "Assisted Nature's Bounty Co. in market research and analysis resulting in a 30% growth in market share within the targeted regions."
         },
     ]
 
