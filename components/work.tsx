@@ -130,7 +130,6 @@ const Work = () => {
                 transition={{
                     duration: 0.3,
                     ease: "easeInOut",
-                    delay: 0.2
                 }}
                 variants={variant4}
             >
