@@ -4,7 +4,7 @@ import { Separator } from "./ui/separator";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
 
 
 const Navbar = () => {
@@ -93,22 +93,23 @@ const Navbar = () => {
                             <Menu />
                         </Button>
                     </SheetTrigger>
-                    <SheetContent className="flex flex-col gap-4 justify-center items-center">
+                    <SheetContent className=" bg-stone-50 pt-28 flex flex-col gap-12 justify-start items-baseline">
                         {navLinks.map((nav) => (
-                            <div
-                                key={nav.label}
-                                className="text-gray-900 text-base  font-normal cursor-pointer hover:text-orange "
-                            >
-                                <Link
-                                    to={nav.link}
-                                    spy={true}
-                                    smooth={true}
-                                    duration={500}
-                                    offset={-50}
+                            <SheetClose key={nav.label} asChild>
+                                <div
+                                    className="text-orange text-base  font-normal cursor-pointer"
                                 >
-                                    {nav.label}
-                                </Link>
-                            </div>
+                                    <Link
+                                        to={nav.link}
+                                        spy={true}
+                                        smooth={true}
+                                        duration={500}
+                                        offset={-50}
+                                    >
+                                        {nav.label}
+                                    </Link>
+                                </div>
+                            </SheetClose>
                         ))}
 
                     </SheetContent>
