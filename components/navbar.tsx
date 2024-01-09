@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { Sheet, SheetContent, SheetDescription, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -59,7 +58,9 @@ const Navbar = () => {
                         }}
                     >
                         <Link href={nav.link} >
+                            <a>
                         {nav.label}
+                            </a>
                         </Link>
                     </motion.div>
                 ))}
@@ -85,38 +86,6 @@ const Navbar = () => {
                     <Menu />
                 </Button>
             </motion.div>
-
-            {/* Responsive Navbar / Hamburger Menu */}
-            {/* <Sheet >
-                <SheetTrigger asChild>
-                    <Button className="md:hidden  h-10 items-center justify-center rounded-none bg-special hover:bg-lime-600 text-black  " >
-                        <Menu />
-                    </Button>
-                </SheetTrigger>
-                <SheetContent >
-                    <div className='flex flex-col gap-12 mt-9' >
-                        <ul className="text-white text-opacity-70  text-base font-normal flex flex-col gap-6 roboto " >
-                            <li>
-                                why FinanceX
-                            </li>
-                            <li>
-                                Features
-                            </li>
-                            <li>
-                                Updates
-                            </li>
-                            <li>
-                                Blog
-                            </li>
-                        </ul>
-                        <Button className="flex w-[111px] flex-row gap-2 items-center justify-center rounded-none bg-special hover:bg-lime-600 text-black " >
-                            SignUp
-                            <MoveRight />
-                        </Button>
-                    </div>
-
-                </SheetContent>
-            </Sheet> */}
 
         </div>
     );
