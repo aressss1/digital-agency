@@ -20,9 +20,6 @@ const Navbar = () => {
         {
             label: 'Our Works',
         },
-        {
-            label: 'Events',
-        },
     ]
 
     return (

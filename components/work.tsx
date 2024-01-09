@@ -114,9 +114,9 @@ const Work = () => {
                         }}
                         variants={variant3}
                     >
-                        <Button className="bg-amber text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center md:self-center self-end " >
+                        <Button className="bg-amber hover:text-stone-50 text-black flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center md:self-center self-end " >
                             Know More
-                            <ArrowRight className="h-5" />
+                            <ArrowRight className="h-5 hover:text-stone-50 " />
                         </Button>
                     </motion.div>
                 </div>

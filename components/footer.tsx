@@ -49,7 +49,7 @@ const Footer = () => {
                         <div className="lg:w-[47rem] md:w-[29rem] text-stone-50 lg:text-7xl md:text-4xl text-xl  font-medium lg:leading-[5rem] md:leading-[3.5rem] ">
                             Have an Awesome Project?
                         </div>
-                        <Button className="bg-orange text-white border border-stone-50 flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center md:self-center self-end " >
+                        <Button className="bg-orange text-white border hover:border-0  border-stone-50 flex items-center gap-4 rounded-[2rem] lg:w-[13rem] md:w-[9rem]  lg:h-[5rem] md:h-[3rem]  justify-center md:self-center self-end " >
                             Explore More
                             <ArrowRight className="h-5" />
                         </Button>
