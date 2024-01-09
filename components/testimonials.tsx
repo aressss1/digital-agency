@@ -20,21 +20,21 @@ const Testimonails = () => {
             id: 2,
             content: " This Teams's efficiency and clear communication made working together a pleasure. Excited for the opportunity to collaborate again soon! ",
             authorName: "Austin Distel",
-            authorRole: "Founder at GrowTogether",
+            authorRole: "Founder at Skyline Solutions",
             authorImg: "/clients/client-2.jpg"
         },
         {
             id: 3,
             content: " Collaborating with this team was smooth thanks to your their communication and efficiency. Looking forward to the next project together!  ",
             authorName: "Mark Howard",
-            authorRole: "Founders at Builders",
+            authorRole: "Founders at Techwave Innovations",
             authorImg: "/clients/client-3.jpg"
         },
         {
             id: 4,
             content: " I really appreciated this team's quick and effective communication. Can't wait to work together again! ",
             authorName: "Aatik Tasneem",
-            authorRole: "CEO at BigSpook",
+            authorRole: "CEO at Nature's Beauty Co.",
             authorImg: "/clients/client-4.jpg"
         },
     ]
