@@ -1,6 +1,6 @@
-## Free Digital Agency Website Template
+### Free Digital Agency Website Template
 
-## Technologies I've used for this :-
+### Technologies I've used for this :-
 
 - Nextjs
 - TailwindCSS
@@ -8,21 +8,28 @@
 - Framer Motion
 
 
-## For Customization
+### For Customization
 
-First, run the development server:
+### Cloning the repository
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```shell
+git clone https://github.com/aressss1/digital-agency.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install packages
+
+```shell
+npm i
+```
+
+## Available commands
+
+Running commands with npm `npm run [command]`
+
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
+
 
 You can start editing the page by modifying `app/page.tsx`. 
 
