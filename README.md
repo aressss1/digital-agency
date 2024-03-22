@@ -1,4 +1,4 @@
-### Free Digital Agency Website Template.
+### Business Starter Landing Page.
 
 ### Technologies I've used for this :-
 
