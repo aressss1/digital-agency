@@ -13,7 +13,7 @@
 ## Cloning the repository
 
 ```shell
-git clone https://github.com/aressss1/digital-agency.git
+git clone https://github.com/aressss1/union.git
 ```
 
 ## Install packages
